@@ -1,1 +1,1 @@
-# SlotPlace
+# affilate

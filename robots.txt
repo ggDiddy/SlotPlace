@@ -1,0 +1,36 @@
+# Robots.txt for SlotPlace.com
+# Updated: November 29, 2025
+
+User-agent: *
+Allow: /
+
+# Disallow admin or private directories (if any)
+Disallow: /admin/
+Disallow: /private/
+
+# Allow all assets
+Allow: /assets/
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.svg$
+
+# Sitemap location
+Sitemap: https://www.slot-place.com/sitemap.xml
+
+# Crawl delay (optional - adjust if needed)
+Crawl-delay: 1
+
+# Block specific bots if needed (example)
+# User-agent: BadBot
+# Disallow: /
+
+# Allow Google Image Bot
+User-agent: Googlebot-Image
+Allow: /
+
+# Allow Google Mobile Bot
+User-agent: Googlebot-Mobile
+Allow: /
