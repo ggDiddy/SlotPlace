@@ -24,7 +24,10 @@ body {
    height: 50px;
 }
 
-
+.partnership {
+   color: transparent;
+   opacity: 0.01 ;
+}
 
 #myBtn {
    display: none; /* Hidden by default */
