@@ -159,6 +159,26 @@ body {
     transform: translateY(-2px);
 }
 
+
+.news-content2 p {
+    text-align: left;
+    text-justify: inter-word;
+    margin-bottom: 1rem;
+}
+
+.news-content2 h2, .news-content2 h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.news-content2 li {
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .casino-card {
