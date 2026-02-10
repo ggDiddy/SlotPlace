@@ -58,6 +58,21 @@ body {
     font-weight: bold;
 }
 
+/* Fix contrast for secondary badges */
+.badge.bg-secondary {
+    background-color: #495057 !important;
+    color: #ffffff !important;
+}
+
+/* Improve text-muted contrast */
+.text-muted {
+    color: #5a5a5a !important;
+}
+
+.card .text-muted {
+    color: #6c757d !important;
+}
+
 /* Hover effect */
 .casino-card:hover {
     transform: scale(1.05);
