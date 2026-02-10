@@ -15,9 +15,7 @@ body {
    color: #F49A36;
 }
 
-.custom-casino-square {
-   width: 75px;
-}
+
 
 .custom-icons {
    width: 50px;
@@ -99,10 +97,7 @@ body {
     z-index: 10;
 }
 
-.custom-casino-square {
-    width: 80px;
-    height: 80px;
-}
+
 
 .custom-color {
     background-color: #ff6f61; /* Main theme color */
@@ -143,10 +138,7 @@ body {
     z-index: 10;
 }
 
-.custom-casino-square {
-    width: 100px;
-    height: auto; /* Allow the image to keep its aspect ratio */
-}
+
 
 .custom-color {
     background-color: #ff6f61; /* Main theme color */
@@ -194,6 +186,8 @@ body {
     text-align: left;
 }
 
+
+}
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .casino-card {
