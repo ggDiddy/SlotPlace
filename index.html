@@ -6,10 +6,15 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
    <!-- Preconnect for performance -->
+   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="dns-prefetch" href="https://fonts.gstatic.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+   <link rel="dns-prefetch" href="https://www.google-analytics.com">
    <link rel="preconnect" href="https://www.google-analytics.com">
+   <link rel="dns-prefetch" href="https://www.googletagmanager.com">
    <link rel="preconnect" href="https://www.googletagmanager.com">
    
    <!-- Primary Meta Tags -->
@@ -54,10 +59,25 @@
    
    <link rel="shortcut icon" type="image/png" href="favicon.png">
 
+   <!-- Critical CSS - Inline for faster initial render -->
+   <style>
+   body{font-family:'Poppins',sans-serif;margin:0;padding:0;background:#f8f9fa}
+   .custom-color{background:linear-gradient(to right,#ff9966,#ff5e62)}
+   .navbar{padding:.5rem 1rem}
+   .container{max-width:1140px;margin:0 auto;padding:0 15px}
+   img{max-width:100%;height:auto}
+   </style>
+
    <!-- Fonts & Styles -->
-   <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+   <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+   <noscript><link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"></noscript>
+   
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" media="print" onload="this.media='all'">
+   <noscript><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"></noscript>
+   
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" media="print" onload="this.media='all'">
+   <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"></noscript>
+   
    <link rel="stylesheet" href="./styles.css">
    
    <!-- Structured Data - Organization Schema -->
