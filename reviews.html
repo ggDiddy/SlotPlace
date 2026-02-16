@@ -2018,18 +2018,33 @@
 
       // Set first casino as active on page load
       window.addEventListener("DOMContentLoaded", function () {
-        const firstCard = document.querySelector(
-          '.casino-card[data-casino="zinkra"]',
+        // Check for casino parameter in URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const casinoParam = urlParams.get('casino');
+        const targetCasino = casinoParam || 'zinkra';
+        
+        const targetCard = document.querySelector(
+          `.casino-card[data-casino="${targetCasino}"]`,
         );
-        if (firstCard) {
-          firstCard.classList.add("border-primary", "active-casino");
-          const firstBtn = firstCard.querySelector(".view-review-btn");
-          if (firstBtn) {
-            firstBtn.classList.remove("btn-outline-primary");
-            firstBtn.classList.add("btn-primary");
+        if (targetCard) {
+          targetCard.classList.add("border-primary", "active-casino");
+          const targetBtn = targetCard.querySelector(".view-review-btn");
+          if (targetBtn) {
+            targetBtn.classList.remove("btn-outline-primary");
+            targetBtn.classList.add("btn-primary");
           }
-          // Initialize with first casino data
-          updateCasinoReview("zinkra");
+          // Initialize with selected casino data
+          updateCasinoReview(targetCasino);
+          
+          // Scroll to reviews section if coming from another page
+          if (casinoParam) {
+            setTimeout(() => {
+              const reviewSection = document.querySelector('.container.my-5');
+              if (reviewSection) {
+                reviewSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }
+            }, 300);
+          }
         }
       });
 
