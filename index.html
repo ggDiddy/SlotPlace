@@ -191,6 +191,7 @@
    </script>
 </head>
    
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-X8Z870YJZF"></script>
 <script>
@@ -211,36 +212,30 @@
 
   gtag('config', 'G-BWXGZQ897S');
 </script>
-   <nav class="navbar navbar-expand-lg bg-light custom-color">
+   <nav class="navbar navbar-expand-lg sticky-top custom-color">
       <div class="container px-5">
         <a class="navbar-brand" href="index.html" aria-label="SlotPlace Home">
          <!-- TODO: Convert to WebP - Current: PNG 97.5 KiB, Est savings: 74 KiB -->
          <img src="./assets//slot-place-logo.webp" alt="slot place logo" style="width: 20%; transform: scale(2);" >
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border: none !important; box-shadow: none !important;">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
          <ul class="navbar-nav ms-auto text-nowrap">
-            <li class="nav-item px-2">
+            <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
-            <li class="nav-item px-2">
-              <a class="nav-link" href="nodeposit.html">No Deposit Bonus</a>
+            <li class="nav-item">
+              <a class="nav-link" href="reviews.html">Reviews</a>
             </li>
-            <li class="nav-item px-2">
-              <a class="nav-link" href="welcomebonus.html">Welcome Bonus</a>
-            </li>
-            <li class="nav-item px-2">
-              <a class="nav-link" href="freespins.html">Free Spins</a>
-            </li>
-            <li class="nav-item px-2">
+            <li class="nav-item">
                <a class="nav-link" href="news.html">News</a>
              </li>
-             <li class="nav-item px-2">
+             <li class="nav-item">
                <a class="nav-link" href="faq.html">FAQ</a>
              </li>
-             <li class="nav-item px-2">
+             <li class="nav-item">
                <a class="nav-link" href="aboutus.html">Contact Us</a>
              </li>
           </ul>
@@ -248,248 +243,578 @@
       </div>
     </nav>
 
+    <!-- Sticky Promotional Banner -->
+    <div id="stickyPromoBanner" class="sticky-promo-banner">
+      <div class="container">
+        <div class="row align-items-center py-2">
+          <div class="col-lg-10 col-md-9 col-10">
+            <div class="d-flex align-items-center flex-wrap gap-3">
+              <img src="./assets/zinkra-casino.webp" alt="Zinkra Casino" style="height: 40px; object-fit: contain;" onerror="this.style.display='none'">
+              <div class="d-flex align-items-center gap-2 flex-wrap">
+                <span class="badge bg-warning text-dark px-3 py-2">
+                  <i class="bi bi-fire"></i> Hot Offer
+                </span>
+                <strong class="text-white mb-0">Zinkra Casino:Get 100% Bonus up to €800 + 100 FS!</strong>
+              </div>
+              <a href="https://znra.adsrv.eacdn.com/C.ashx?btag=a_3342b_409c_&affid=1044&siteid=3342&adid=409&c=" 
+                 target="_blank" 
+                 class="btn btn-warning btn-sm fw-bold ms-auto d-none d-md-inline-block"
+                 style="white-space: nowrap;">
+                Claim Bonus <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-2 text-end">
+            <button class="btn btn-link text-white p-0" onclick="closeStickyBanner()" aria-label="Close banner">
+              <i class="bi bi-x-circle" style="font-size: 1.5rem;"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <main id="main-content">
 
     
 
 
     
-    <!-- Hero Section with cards -->
+    <!-- Hero Section with Modern Gradient Design -->
 <section class="container-lg p-0" aria-labelledby="hero-section">
 
-
-            <!--   Background Image ADD !  -->
-    <!-- TODO: Convert to WebP - Current: PNG 19,533 KiB, Est savings: 16,930 KiB - LARGEST IMAGE -->
-    <section class="py-5" >
+    <!-- Modern Hero Section -->
+    <section class="hero-section py-5" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; margin-bottom: 3rem; position: relative; overflow: hidden;">
+      <!-- Decorative elements -->
+      <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: rgba(255,255,255,0.1); border-radius: 50%; filter: blur(60px);"></div>
+      <div style="position: absolute; bottom: -30px; left: -30px; width: 150px; height: 150px; background: rgba(255,255,255,0.1); border-radius: 50%; filter: blur(40px);"></div>
+      
       <div class="container">
-         <div class="row text-md-start text-center align-items-center">
-            <div class="col-md-10 col-lg-9">
-               <h1 class="display-4 py-4 mt-5 fw-bold">Top Online Casinos 2026 with Huge Bonuses</h1>
-               <p class="lead lh-4"><mark class="bg-dark text-white px-3 py-2" style="background-color: rgba(0,0,0,0.85) !important;">Discover the best online casinos with amazing bonuses up to $750, 200+ free spins, and top slot games. Expert reviews, trusted sites, and safe gambling. Bet smart and win big!</mark></p>
+         <div class="row text-center text-white align-items-center justify-content-center py-5">
+            <div class="col-lg-10">
+               <!-- Top Badges -->
+               <div class="mb-3">
+                  <span class="badge px-4 py-2 me-2 mb-2" style="background: rgba(255,255,255,0.25); backdrop-filter: blur(10px); font-size: 0.95rem; border: 1px solid rgba(255,255,255,0.3);">
+                     <i class="bi bi-trophy-fill text-warning"></i> #1 Casino Guide 2026
+                  </span>
+                  <span class="badge px-4 py-2 mb-2" style="background: rgba(255,255,255,0.25); backdrop-filter: blur(10px); font-size: 0.95rem; border: 1px solid rgba(255,255,255,0.3);">
+                     <i class="bi bi-shield-check-fill text-success"></i> 100% Licensed & Secure
+                  </span>
+               </div>
+
+               <!-- Main Heading -->
+               <h1 class="display-2 fw-bold mb-4" style="text-shadow: 3px 3px 6px rgba(0,0,0,0.3); line-height: 1.2;">
+                  Top Online Casinos 2026<br>
+                  <span style="font-size: 0.7em; background: linear-gradient(90deg, #ffd700, #ffed4e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                     with Huge Bonuses & Free Spins
+                  </span>
+               </h1>
+
+               <!-- Description -->
+               <p class="lead fs-4 mb-4 px-lg-5" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.3); line-height: 1.6;">
+                  Discover the best online casinos with amazing bonuses up to <strong>$750</strong>, <strong>200+ free spins</strong>, and top slot games. Expert reviews, trusted sites, and safe gambling. Bet smart and win big!
+               </p>
+
+               <!-- Feature Badges -->
+               <div class="d-flex justify-content-center gap-2 flex-wrap mb-4">
+                  <span class="badge bg-white text-dark px-3 py-2" style="font-size: 0.85rem; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+                     <i class="bi bi-gift-fill text-success"></i> Exclusive Bonuses
+                  </span>
+                  <span class="badge bg-white text-dark px-3 py-2" style="font-size: 0.85rem; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+                     <i class="bi bi-lightning-charge-fill text-warning"></i> Instant Withdrawals
+                  </span>
+                  <span class="badge bg-white text-dark px-3 py-2" style="font-size: 0.85rem; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+                     <i class="bi bi-star-fill text-warning"></i> 5000+ Games
+                  </span>
+                  <span class="badge bg-white text-dark px-3 py-2" style="font-size: 0.85rem; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+                     <i class="bi bi-headset text-primary"></i> 24/7 Support
+                  </span>
+               </div>
+
+               <!-- Hashtags Section -->
+               <div class="mt-4 pt-3" style="border-top: 1px solid rgba(255,255,255,0.2);">
+                  <div class="d-flex justify-content-center gap-2 flex-wrap">
+                     <span class="badge hashtag-badge" style="background: rgba(255,255,255,0.15); font-size: 0.8rem; font-weight: 400; padding: 0.4rem 0.8rem;">
+                        #OnlineCasino
+                     </span>
+                     <span class="badge hashtag-badge" style="background: rgba(255,255,255,0.15); font-size: 0.8rem; font-weight: 400; padding: 0.4rem 0.8rem;">
+                        #CasinoBonus
+                     </span>
+                     <span class="badge hashtag-badge" style="background: rgba(255,255,255,0.15); font-size: 0.8rem; font-weight: 400; padding: 0.4rem 0.8rem;">
+                        #FreeSpins
+                     </span>
+                     <span class="badge hashtag-badge" style="background: rgba(255,255,255,0.15); font-size: 0.8rem; font-weight: 400; padding: 0.4rem 0.8rem;">
+                        #SlotGames
+                     </span>
+                     <span class="badge hashtag-badge" style="background: rgba(255,255,255,0.15); font-size: 0.8rem; font-weight: 400; padding: 0.4rem 0.8rem;">
+                        #CasinoReviews
+                     </span>
+                     <span class="badge hashtag-badge" style="background: rgba(255,255,255,0.15); font-size: 0.8rem; font-weight: 400; padding: 0.4rem 0.8rem;">
+                        #BestCasino2026
+                     </span>
+                     <span class="badge hashtag-badge" style="background: rgba(255,255,255,0.15); font-size: 0.8rem; font-weight: 400; padding: 0.4rem 0.8rem;">
+                        #WelcomeBonus
+                     </span>
+                     <span class="badge hashtag-badge" style="background: rgba(255,255,255,0.15); font-size: 0.8rem; font-weight: 400; padding: 0.4rem 0.8rem;">
+                        #OnlineGaming
+                     </span>
+                  </div>
+               </div>
             </div>
          </div>
+      </div>
+    </section>
 <!-- card -->
 <!-- Top Casino Cards with Ranking -->
-<div class="row mt-5" >
+<div class="row mt-5">
    <div class="col text-center">
-    <h2 class="h2 fw-bold mb-4" >🏆 Top Rated Online Casinos 2026</h2>
-      <p class="lead text-dark" >Hand-picked casinos with the best bonuses, fastest payouts, and highest ratings</p>
+    <h2 class="h2 fw-bold mb-3" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+       Top Rated Online Casinos 2026
+    </h2>
+      <p class="lead text-dark mb-1">Hand-picked casinos with the best bonuses, fastest payouts, and highest ratings</p>
+      <div class="d-flex justify-content-center gap-2 flex-wrap mb-3">
+         <span class="badge bg-success"><i class="bi bi-shield-check"></i> Licensed</span>
+         <span class="badge bg-primary"><i class="bi bi-lightning-charge"></i> Fast Payouts</span>
+         <span class="badge bg-warning text-dark"><i class="bi bi-star-fill"></i> Top Rated</span>
+         <span class="badge bg-info"><i class="bi bi-gift-fill"></i> Exclusive Bonuses</span>
+      </div>
    </div>
 </div>
 <div class="row g-4 mt-3 pb-5">
     <!-- Casino 1 -->
-     <div class="col-md-6">
-        <div class="card h-100 border-0 shadow position-relative casino-card">
-            <div class="rank-badge position-absolute top-0 start-0 p-3">
-                <span class="badge bg-warning text-dark fs-5">#1</span>
+    <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 shadow-sm position-relative casino-card" style="background: white;">
+            <div class="position-absolute top-0 start-0 m-3">
+                <span class="badge bg-warning text-dark" style="font-size: 0.9rem; padding: 0.5rem 0.9rem;">
+                   <i class="bi bi-trophy-fill"></i> #1
+                </span>
             </div>
-            <div class="card-body text-center">
-                <div class="d-flex align-items-center justify-content-around">
-                    <!-- TODO: Convert to WebP - Current: JPG format -->
-                    <img src="./assets/logo-vegasino.webp" class="custom-casino-square w-25 bg-dark" loading="lazy" alt="Vegasino casino">
-                    <h6 class="fw-bold text-black">Vegasino</h6>
+            
+            <div class="card-body text-center p-4">
+                <img src="./assets/logo-vegasino.webp" class="mb-3" loading="lazy" alt="Vegasino casino" style="width: 80px; height: 80px; object-fit: contain;">
+                
+                <h3 class="h5 fw-bold mb-2">Vegasino</h3>
+                
+                <div class="text-warning mb-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <span class="text-dark ms-1" style="font-size: 0.9rem;">4.8/5</span>
                 </div>
-                <p class="lead text-muted mt-4">Best Bonus</p>
-                <h3 class="h4 text-warning">100% Up To $750 +200FS</h3>
-                <div class="d-flex justify-content-between py-2">
-                    <a class="btn btn-lg custom-text-color fw-light">Read Review</a>
-                    <button class="btn custom-color order-0 fw-light">
-                        <a class="text-white text-decoration-none" href="https://vgso.naralvin.com/?mid=241423_1671486" target="_blank">Claim Bonus</a>
-                    </button>
+
+                <div class="p-3 mb-3" style="background: linear-gradient(135deg, #fff3cd, #ffe8a1); border-radius: 10px;">
+                    <p class="text-dark mb-1 fw-bold" style="font-size: 0.85rem;">🎁 Welcome Bonus</p>
+                    <h4 class="h4 fw-bold mb-1 text-danger">100% Up To $750</h4>
+                    <p class="mb-0 fw-bold text-warning">+ 200 Free Spins</p>
                 </div>
-                <div class="text-start mt-3">
-                    <small class="text-muted">18+. Min deposit $20.</small>
+
+                <div class="d-grid gap-2 mb-3">
+                    <a href="https://vgso.naralvin.com/?mid=241423_1671486" target="_blank" class="btn btn-danger fw-bold">
+                        Claim Bonus
+                    </a>
+                    <a class="btn btn-outline-secondary btn-sm">Read Review</a>
                 </div>
+
+                <div class="d-flex justify-content-around text-center pt-3 border-top">
+                    <div>
+                        <small class="text-muted d-block">Withdrawal</small>
+                        <span class="fw-bold">24-48h</span>
+                    </div>
+                    <div>
+                        <small class="text-muted d-block">Games</small>
+                        <span class="fw-bold">5000+</span>
+                    </div>
+                    <div>
+                        <small class="text-muted d-block">Min Deposit</small>
+                        <span class="fw-bold">$20</span>
+                    </div>
+                </div>
+
+                <small class="text-muted d-block mt-3">18+ | T&C Apply</small>
             </div>
         </div>
     </div>
 
     <!-- Casino 2 -->
-   <div class="col-md-6">
-        <div class="card h-100 border-0 shadow position-relative casino-card">
-            <div class="rank-badge position-absolute top-0 start-0 p-3">
-                <span class="badge bg-warning text-dark fs-5">#2</span>
+    <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 shadow-sm position-relative casino-card" style="background: white;">
+            <div class="position-absolute top-0 start-0 m-3">
+                <span class="badge bg-info text-white" style="font-size: 0.9rem; padding: 0.5rem 0.9rem;">
+                   <i class="bi bi-trophy-fill"></i> #2
+                </span>
             </div>
-            <div class="card-body text-center">
-                <div class="d-flex align-items-center justify-content-around">
-                    <!-- TODO: Convert to WebP - Current: JPG format -->
-                    <img src="./assets/BC-Game-Logo.webp" class="custom-casino-square w-25" loading="lazy" alt="BCgame Casino">
-                    <h6 class="fw-bold text-black">BCgame</h6>
+            
+            <div class="card-body text-center p-4">
+                <img src="./assets/BC-Game-Logo.webp" class="mb-3" loading="lazy" alt="BCgame Casino" style="width: 80px; height: 80px; object-fit: contain;">
+                
+                <h3 class="h5 fw-bold mb-2">BC.Game</h3>
+                
+                <div class="text-warning mb-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <span class="text-dark ms-1" style="font-size: 0.9rem;">4.3/5</span>
                 </div>
-                <p class="lead text-muted mt-4">GET UP TO</p>
-                <h3 class="h4 text-warning">$20,000 </h3>
-                <div class="d-flex justify-content-between py-2">
-                    <a class="btn btn-lg custom-text-color fw-light">Read Review</a>
-                    <button class="btn custom-color order-0 fw-light">
-                        <a class="text-white text-decoration-none" href="https://partnerbcgame.com/vt1wvsdv6" target="_blank">Claim Bonus</a>
-                    </button>
+
+                <div class="p-3 mb-3" style="background: linear-gradient(135deg, #e3f2fd, #bbdefb); border-radius: 10px;">
+                    <p class="text-dark mb-1 fw-bold" style="font-size: 0.85rem;">💎 Crypto Exclusive</p>
+                    <h4 class="h4 fw-bold mb-1 text-primary">Up To $20,000</h4>
+                    <p class="mb-0 fw-bold text-info">Welcome Package</p>
                 </div>
-                <div class="text-start mt-3">
-                    <small class="text-muted">18+. Min deposit 20</small>
+
+                <div class="d-grid gap-2 mb-3">
+                    <a href="https://partnerbcgame.com/vt1wvsdv6" target="_blank" class="btn btn-primary fw-bold">
+                        Claim Bonus
+                    </a>
+                    <a class="btn btn-outline-secondary btn-sm">Read Review</a>
                 </div>
+
+                <div class="d-flex justify-content-around text-center pt-3 border-top">
+                    <div>
+                        <small class="text-muted d-block">Withdrawal</small>
+                        <span class="fw-bold">Instant</span>
+                    </div>
+                    <div>
+                        <small class="text-muted d-block">Games</small>
+                        <span class="fw-bold">8000+</span>
+                    </div>
+                    <div>
+                        <small class="text-muted d-block">Min Deposit</small>
+                        <span class="fw-bold">$20</span>
+                    </div>
+                </div>
+
+                <small class="text-muted d-block mt-3">18+ | T&C Apply</small>
             </div>
         </div>
     </div>
 
     <!-- Casino 3 -->
-<div class="col-md-6">
-        <div class="card h-100 border-0 shadow position-relative casino-card">
-            <div class="rank-badge position-absolute top-0 start-0 p-3">
-                <span class="badge bg-warning text-dark fs-5">#3</span>
+    <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 shadow-sm position-relative casino-card" style="background: white;">
+            <div class="position-absolute top-0 start-0 m-3">
+                <span class="badge bg-success text-white" style="font-size: 0.9rem; padding: 0.5rem 0.9rem;">
+                   <i class="bi bi-trophy-fill"></i> #3
+                </span>
             </div>
-            <div class="card-body text-center">
-                <div class="d-flex align-items-center justify-content-around">
-                    <!-- TODO: Convert to WebP - Current: JPG format -->
-                    <img src="./assets/Casina-logo.webp" class="custom-casino-square w-25 " loading="lazy" alt="Casina Casnio">
-                    <h6 class="fw-bold text-black">Casina</h6>
+            
+            <div class="card-body text-center p-4">
+                <img src="./assets/Casina-logo.webp" class="mb-3" loading="lazy" alt="Casina Casino" style="width: 80px; height: 80px; object-fit: contain;">
+                
+                <h3 class="h5 fw-bold mb-2">Casina</h3>
+                
+                <div class="text-warning mb-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <span class="text-dark ms-1" style="font-size: 0.9rem;">4.6/5</span>
                 </div>
-                <p class="lead text-muted mt-4">Best Welcome Bonus</p>
-                <h3 class="h4 text-warning">Up To 150% + 200FS</h3>
-                <div class="d-flex justify-content-between py-2">
-                    <a class="btn btn-lg custom-text-color fw-light">Read Review</a>
-                    <button class="btn custom-color order-0 fw-light">
-                        <a class="text-white text-decoration-none" href="https://csna.fynkelto.com/?mid=349169_2016216" target="_blank">Claim Bonus</a>
-                    </button>
+
+                <div class="p-3 mb-3" style="background: linear-gradient(135deg, #d4edda, #c3e6cb); border-radius: 10px;">
+                    <p class="text-dark mb-1 fw-bold" style="font-size: 0.85rem;">🎁 Welcome Offer</p>
+                    <h4 class="h4 fw-bold mb-1 text-success">150% Up To $500</h4>
+                    <p class="mb-0 fw-bold text-success">+ 200 Free Spins</p>
                 </div>
-                <div class="text-start mt-3">
-                    <small class="text-muted">18+. Min deposit $20</small>
+
+                <div class="d-grid gap-2 mb-3">
+                    <a href="https://csna.fynkelto.com/?mid=349169_2016216" target="_blank" class="btn btn-success fw-bold">
+                        Claim Bonus
+                    </a>
+                    <a class="btn btn-outline-secondary btn-sm">Read Review</a>
                 </div>
+
+                <div class="d-flex justify-content-around text-center pt-3 border-top">
+                    <div>
+                        <small class="text-muted d-block">Withdrawal</small>
+                        <span class="fw-bold">12-24h</span>
+                    </div>
+                    <div>
+                        <small class="text-muted d-block">Games</small>
+                        <span class="fw-bold">3500+</span>
+                    </div>
+                    <div>
+                        <small class="text-muted d-block">Min Deposit</small>
+                        <span class="fw-bold">$20</span>
+                    </div>
+                </div>
+
+                <small class="text-muted d-block mt-3">18+ | T&C Apply</small>
             </div>
         </div>
     </div>
     
-     <!-- Casino 4 -->
-<div class="col-md-6">
-        <div class="card h-100 border-0 shadow position-relative casino-card">
-            <div class="rank-badge position-absolute top-0 start-0 p-3">
-                <span class="badge bg-secondary text-dark fs-6">Top 10</span>
+    <!-- Casino 4 -->
+    <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 shadow-sm position-relative casino-card" style="background: white;">
+            <div class="position-absolute top-0 start-0 m-3">
+                <span class="badge bg-secondary text-white" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;">Top 10</span>
             </div>
-            <div class="card-body text-center">
-                <div class="d-flex align-items-center justify-content-around ">
-                    <!-- TODO: Convert to WebP - Current: JPG format -->
-                    <img src="./assets/Mega-Medusa-Casino-Logo.webp" class="custom-casino-square w-25 bg-dark p-2" loading="lazy" alt="Mega Medusa Casino">
-                    <h6 class="fw-bold text-black">Mega Medusa</h6>
+            
+            <div class="card-body text-center p-4">
+                <img src="./assets/Mega-Medusa-Casino-Logo.webp" class="mb-3 bg-dark p-2" loading="lazy" alt="Mega Medusa Casino" style="width: 80px; height: 80px; object-fit: contain; border-radius: 10px;">
+                
+                <h3 class="h5 fw-bold mb-2">Mega Medusa</h3>
+                
+                <div class="text-warning mb-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <span class="text-dark ms-1" style="font-size: 0.9rem;">4.5/5</span>
                 </div>
-                <p class="lead text-muted mt-4">Welcome Bonus</p>
-                <h3 class="h4 text-warning">251% Bonus +53 FS</h3>
-                <div class="d-flex justify-content-between py-2">
-                    <a class="btn btn-lg custom-text-color fw-light">Read Review</a>
-                    <button class="btn custom-color order-0 fw-light">
-                        <a class="text-white text-decoration-none" href="https://tracking.affiltrackk04.com/aff_c?offer_id=237034&aff_id=50813" target="_blank">Claim Bonus</a>
-                    </button>
+
+                <div class="p-3 mb-3" style="background: linear-gradient(135deg, #fff3cd, #ffe8a1); border-radius: 10px;">
+                    <p class="text-dark mb-1 fw-bold" style="font-size: 0.85rem;">🎁 Welcome Bonus</p>
+                    <h4 class="h5 fw-bold mb-1 text-warning">251% Bonus</h4>
+                    <p class="mb-0 fw-bold text-warning">+ 53 Free Spins</p>
                 </div>
-                <div class="text-start mt-3">
-                    <small class="text-muted">18+. Min deposit $20</small>
+
+                <div class="d-grid gap-2 mb-3">
+                    <a href="https://tracking.affiltrackk04.com/aff_c?offer_id=237034&aff_id=50813" target="_blank" class="btn btn-warning fw-bold">
+                        Claim Bonus
+                    </a>
+                    <a class="btn btn-outline-secondary btn-sm">Read Review</a>
                 </div>
+
+                <div class="d-flex justify-content-around text-center pt-3 border-top">
+                    <div>
+                        <small class="text-muted d-block">Withdrawal</small>
+                        <span class="fw-bold">24-48h</span>
+                    </div>
+                    <div>
+                        <small class="text-muted d-block">Games</small>
+                        <span class="fw-bold">2500+</span>
+                    </div>
+                    <div>
+                        <small class="text-muted d-block">Min Deposit</small>
+                        <span class="fw-bold">$20</span>
+                    </div>
+                </div>
+
+                <small class="text-muted d-block mt-3">18+ | T&C Apply</small>
             </div>
         </div>
     </div>
 
-<!--    5 Casino -->
-<div class="col-md-6">
-        <div class="card h-100 border-0 shadow position-relative casino-card">
-            <div class="rank-badge position-absolute top-0 start-0 p-3">
-                <span class="badge bg-secondary text-dark fs-6">Top 10</span>
+    <!-- Casino 5 -->
+    <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 shadow-sm position-relative casino-card" style="background: white;">
+            <div class="position-absolute top-0 start-0 m-3">
+                <span class="badge bg-secondary text-white" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;">Top 10</span>
             </div>
-            <div class="card-body text-center">
-                <div class="d-flex align-items-center justify-content-around">
-                    <!-- TODO: Convert to WebP - Current: JPG format -->
-                    <img src="./assets/playoyo-logo.png" class="custom-casino-square w-25 " loading="lazy" alt="PlayOJO casino">
-                    <h6 class="fw-bold text-black">PlayOJO</h6>
+            
+            <div class="card-body text-center p-4">
+                <img src="./assets/playoyo-logo.png" class="mb-3" loading="lazy" alt="PlayOJO casino" style="width: 80px; height: 80px; object-fit: contain;">
+                
+                <h3 class="h5 fw-bold mb-2">PlayOJO</h3>
+                
+                <div class="text-warning mb-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <span class="text-dark ms-1" style="font-size: 0.9rem;">4.4/5</span>
                 </div>
-                <p class="lead text-muted mt-4">on BIG BASS BONANZA</p>
-                <h3 class="h4 text-warning">50 FREE SPINS</h3>
-                <div class="d-flex justify-content-between py-2">
-                    <a class="btn btn-lg custom-text-color fw-light">Read Review</a>
-                    <button class="btn custom-color order-0 fw-light">
-                        <a class="text-white text-decoration-none" href="https://site.gotoplayojo.com/index.php?aname=catsycom92&zone_id=80spins_roc" target="_blank">Claim Bonus</a>
-                    </button>
+
+                <div class="p-3 mb-3" style="background: linear-gradient(135deg, #e3f2fd, #bbdefb); border-radius: 10px;">
+                    <p class="text-dark mb-1 fw-bold" style="font-size: 0.85rem;">🎰 On BIG BASS BONANZA</p>
+                    <h4 class="h5 fw-bold mb-1 text-primary">50 Free Spins</h4>
+                    <p class="mb-0 fw-bold text-muted">No Wagering</p>
                 </div>
-                <div class="text-start mt-3">
-                    <small class="text-muted">18+. Min deposit $20</small>
+
+                <div class="d-grid gap-2 mb-3">
+                    <a href="https://site.gotoplayojo.com/index.php?aname=catsycom92&zone_id=80spins_roc" target="_blank" class="btn btn-primary fw-bold">
+                        Claim Bonus
+                    </a>
+                    <a class="btn btn-outline-secondary btn-sm">Read Review</a>
                 </div>
+
+                <div class="d-flex justify-content-around text-center pt-3 border-top">
+                    <div>
+                        <small class="text-muted d-block">Withdrawal</small>
+                        <span class="fw-bold">24h</span>
+                    </div>
+                    <div>
+                        <small class="text-muted d-block">Games</small>
+                        <span class="fw-bold">3000+</span>
+                    </div>
+                    <div>
+                        <small class="text-muted d-block">Min Deposit</small>
+                        <span class="fw-bold">$20</span>
+                    </div>
+                </div>
+
+                <small class="text-muted d-block mt-3">18+ | T&C Apply</small>
             </div>
         </div>
     </div>
    
-<!--  Csino 6   -->
-   <div class="col-md-6">
-        <div class="card h-100 border-0 shadow position-relative casino-card">
-            <div class="rank-badge position-absolute top-0 start-0 p-3">
-                <span class="badge bg-secondary text-dark fs-6">Top 10</span>
+    <!-- Casino 6 -->
+    <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 shadow-sm position-relative casino-card" style="background: white;">
+            <div class="position-absolute top-0 start-0 m-3">
+                <span class="badge bg-secondary text-white" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;">Top 10</span>
             </div>
-            <div class="card-body text-center">
-                <div class="d-flex align-items-center justify-content-around">
-                    <!-- TODO: Convert to WebP - Current: JPG format -->
-                    <img src="./assets/legiano.webp" class="custom-casino-square w-25" loading="lazy" alt="Legiano">
-                    <h6 class="fw-bold text-black">Legiano</h6>
+            
+            <div class="card-body text-center p-4">
+                <img src="./assets/legiano.webp" class="mb-3" loading="lazy" alt="Legiano" style="width: 80px; height: 80px; object-fit: contain;">
+                
+                <h3 class="h5 fw-bold mb-2">Legiano</h3>
+                
+                <div class="text-warning mb-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <span class="text-dark ms-1" style="font-size: 0.9rem;">4.7/5</span>
                 </div>
-                <p class="lead text-muted mt-4">Best Bonus</p>
-                <h3 class="h4 text-warning">100% Up To $750 + 200FS</h3>
-                <div class="d-flex justify-content-between py-2">
-                    <a class="btn btn-lg custom-text-color fw-light">Read Review</a>
-                    <button class="btn custom-color order-0 fw-light">
-                        <a class="text-white text-decoration-none" href="https://lgno.monvaki.com/?mid=253566_1502609" target="_blank">Claim Bonus</a>
-                    </button>
+
+                <div class="p-3 mb-3" style="background: linear-gradient(135deg, #fff3cd, #ffe8a1); border-radius: 10px;">
+                    <p class="text-dark mb-1 fw-bold" style="font-size: 0.85rem;">🎁 Best Bonus</p>
+                    <h4 class="h5 fw-bold mb-1 text-danger">100% Up To $750</h4>
+                    <p class="mb-0 fw-bold text-warning">+ 200 Free Spins</p>
                 </div>
-                <div class="text-start mt-3">
-                    <small class="text-muted">18+. Min deposit $20</small>
+
+                <div class="d-grid gap-2 mb-3">
+                    <a href="https://lgno.monvaki.com/?mid=253566_1502609" target="_blank" class="btn btn-danger fw-bold">
+                        Claim Bonus
+                    </a>
+                    <a class="btn btn-outline-secondary btn-sm">Read Review</a>
                 </div>
+
+                <div class="d-flex justify-content-around text-center pt-3 border-top">
+                    <div>
+                        <small class="text-muted d-block">Withdrawal</small>
+                        <span class="fw-bold">24-48h</span>
+                    </div>
+                    <div>
+                        <small class="text-muted d-block">Games</small>
+                        <span class="fw-bold">4500+</span>
+                    </div>
+                    <div>
+                        <small class="text-muted d-block">Min Deposit</small>
+                        <span class="fw-bold">$20</span>
+                    </div>
+                </div>
+
+                <small class="text-muted d-block mt-3">18+ | T&C Apply</small>
             </div>
         </div>
     </div>
    
     <!-- Casino 7 -->
-    <div class="col-md-6">
-        <div class="card h-100 border-0 shadow position-relative casino-card">
-            <div class="rank-badge position-absolute top-0 start-0 p-3">
-                <span class="badge bg-secondary text-dark fs-6">Top 10</span>
+    <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 shadow-sm position-relative casino-card" style="background: white;">
+            <div class="position-absolute top-0 start-0 m-3">
+                <span class="badge bg-secondary text-white" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;">Top 10</span>
             </div>
-            <div class="card-body text-center">
-                <div class="d-flex align-items-center justify-content-around">
-                    <!-- TODO: Convert to WebP - Current: JPG format -->
-                    <img src="./assets/Froggybet-logo.webp" class="custom-casino-square w-25" loading="lazy" alt="FroggyBet">
-                    <h6 class="fw-bold text-black">FroggyBet</h6>
+            
+            <div class="card-body text-center p-4">
+                <img src="./assets/Froggybet-logo.webp" class="mb-3" loading="lazy" alt="FroggyBet" style="width: 80px; height: 80px; object-fit: contain;">
+                
+                <h3 class="h5 fw-bold mb-2">FroggyBet</h3>
+                
+                <div class="text-warning mb-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <span class="text-dark ms-1" style="font-size: 0.9rem;">4.7/5</span>
                 </div>
-                <p class="lead text-muted mt-4">Best Bonus</p>
-                <h3 class="h4 text-warning">600% Up To £4000 </h3>
-                <div class="d-flex justify-content-between py-2">
-                    <a class="btn btn-lg custom-text-color fw-light">Read Review</a>
-                    <button class="btn custom-color order-0 fw-light">
-                        <a class="text-white text-decoration-none" href="https://go.froggypartners.com/visit/?bta=35605&nci=6141" target="_blank">Claim Bonus</a>
-                    </button>
+
+                <div class="p-3 mb-3" style="background: linear-gradient(135deg, #d4edda, #c3e6cb); border-radius: 10px;">
+                    <p class="text-dark mb-1 fw-bold" style="font-size: 0.85rem;">🎁 Best Bonus</p>
+                    <h4 class="h5 fw-bold mb-1 text-success">600% Up To £4000</h4>
+                    <p class="mb-0 fw-bold text-success">Huge Package</p>
                 </div>
-                <div class="text-start mt-3">
-                    <small class="text-muted">18+. Min deposit £20</small>
+
+                <div class="d-grid gap-2 mb-3">
+                    <a href="https://go.froggypartners.com/visit/?bta=35605&nci=6141" target="_blank" class="btn btn-success fw-bold">
+                        Claim Bonus
+                    </a>
+                    <a class="btn btn-outline-secondary btn-sm">Read Review</a>
                 </div>
+
+                <div class="d-flex justify-content-around text-center pt-3 border-top">
+                    <div>
+                        <small class="text-muted d-block">Withdrawal</small>
+                        <span class="fw-bold">24-48h</span>
+                    </div>
+                    <div>
+                        <small class="text-muted d-block">Games</small>
+                        <span class="fw-bold">3000+</span>
+                    </div>
+                    <div>
+                        <small class="text-muted d-block">Min Deposit</small>
+                        <span class="fw-bold">£20</span>
+                    </div>
+                </div>
+
+                <small class="text-muted d-block mt-3">18+ | T&C Apply</small>
             </div>
         </div>
     </div>
    
    
-       <!-- Casino 8 -->
-     <div class="col-md-6">
-        <div class="card h-100 border-0 shadow position-relative casino-card">
-            <div class="rank-badge position-absolute top-0 start-0 p-3">
-                <span class="badge bg-secondary text-dark fs-6">Top 10</span>
+    <!-- Casino 8 -->
+    <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 shadow-sm position-relative casino-card" style="background: white;">
+            <div class="position-absolute top-0 start-0 m-3">
+                <span class="badge bg-secondary text-white" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;">Top 10</span>
             </div>
-            <div class="card-body text-center">
-                <div class="d-flex align-items-center justify-content-around">
-                    <!-- TODO: Convert to WebP - Current: JPG format -->
-                    <img src="./assets/casino_brango.png" class="custom-casino-square w-25" loading="lazy" alt="Casino Brango">
-                    <h6 class="fw-bold text-black">Casino Brango</h6>
+            
+            <div class="card-body text-center p-4">
+                <img src="./assets/casino_brango.png" class="mb-3" loading="lazy" alt="Casino Brango" style="width: 80px; height: 80px; object-fit: contain;">
+                
+                <h3 class="h5 fw-bold mb-2">Casino Brango</h3>
+                
+                <div class="text-warning mb-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <span class="text-dark ms-1" style="font-size: 0.9rem;">4.3/5</span>
                 </div>
-                <p class="lead text-muted mt-4">Best Welcome Bonus</p>
-                <h3 class="h4 text-warning">100% up to + 100FS</h3>
-                <div class="d-flex justify-content-between py-2">
-                    <a class="btn btn-lg custom-text-color fw-light">Read Review</a>
-                    <button class="btn custom-color order-0 fw-light">
-                        <a class="text-white text-decoration-none" href="https://tracking.affiltrackk04.com/aff_c?offer_id=114057&aff_id=50813" target="_blank">Claim Bonus</a>
-                    </button>
+
+                <div class="p-3 mb-3" style="background: linear-gradient(135deg, #fff3cd, #ffe8a1); border-radius: 10px;">
+                    <p class="text-dark mb-1 fw-bold" style="font-size: 0.85rem;">🎁 Welcome Bonus</p>
+                    <h4 class="h5 fw-bold mb-1 text-warning">100%</h4>
+                    <p class="mb-0 fw-bold text-warning">+ 100 Free Spins</p>
                 </div>
-                <div class="text-start mt-3">
-                    <small class="text-muted">18+. Min deposit $20</small>
+
+                <div class="d-grid gap-2 mb-3">
+                    <a href="https://tracking.affiltrackk04.com/aff_c?offer_id=114057&aff_id=50813" target="_blank" class="btn btn-warning fw-bold">
+                        Claim Bonus
+                    </a>
+                    <a class="btn btn-outline-secondary btn-sm">Read Review</a>
                 </div>
+
+                <div class="d-flex justify-content-around text-center pt-3 border-top">
+                    <div>
+                        <small class="text-muted d-block">Withdrawal</small>
+                        <span class="fw-bold">48-72h</span>
+                    </div>
+                    <div>
+                        <small class="text-muted d-block">Games</small>
+                        <span class="fw-bold">2000+</span>
+                    </div>
+                    <div>
+                        <small class="text-muted d-block">Min Deposit</small>
+                        <span class="fw-bold">$20</span>
+                    </div>
+                </div>
+
+                <small class="text-muted d-block mt-3">18+ | T&C Apply</small>
             </div>
         </div>
     </div>
@@ -498,141 +823,272 @@
 
 
 
-       <!-- Casino 9 -->
-<div class="col-md-6">
-        <div class="card h-100 border-0 shadow position-relative casino-card">
-            <div class="rank-badge position-absolute top-0 start-0 p-3">
-                <span class="badge bg-secondary text-dark fs-6"> Top 10</span>
+    <!-- Casino 9 -->
+    <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 shadow-sm position-relative casino-card" style="background: white;">
+            <div class="position-absolute top-0 start-0 m-3">
+                <span class="badge bg-secondary text-white" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;">Top 10</span>
             </div>
-            <div class="card-body text-center">
-                <div class="d-flex align-items-center justify-content-around">
-                    <!-- TODO: Convert to WebP - Current: JPG format -->
-                    <img src="./assets/playoyo-logo.png" class="custom-casino-square w-25" loading="lazy" alt="PlayOJO casino">
-                    <h6 class="fw-bold text-black">PlayOJO</h6>
+            
+            <div class="card-body text-center p-4">
+                <img src="./assets/playoyo-logo.png" class="mb-3" loading="lazy" alt="PlayOJO casino" style="width: 80px; height: 80px; object-fit: contain;">
+                
+                <h3 class="h5 fw-bold mb-2">PlayOJO</h3>
+                
+                <div class="text-warning mb-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <span class="text-dark ms-1" style="font-size: 0.9rem;">4.4/5</span>
                 </div>
-                <p class="lead text-muted mt-4">Best Bonus</p>
-                <h3 class="h4 text-warning">80FS on your FD</h3>
-                <div class="d-flex justify-content-between py-2">
-                    <a class="btn btn-lg custom-text-color fw-light">Read Review</a>
-                    <button class="btn custom-color order-0 fw-light">
-                        <a class="text-white text-decoration-none" href="https://site.gotoplayojo.com/index.php?aname=catsycom92&zone_id=80spins_roc" target="_blank">Claim Bonus</a>
-                    </button>
+
+                <div class="p-3 mb-3" style="background: linear-gradient(135deg, #e3f2fd, #bbdefb); border-radius: 10px;">
+                    <p class="text-dark mb-1 fw-bold" style="font-size: 0.85rem;">🎰 First Deposit</p>
+                    <h4 class="h5 fw-bold mb-1 text-primary">80 Free Spins</h4>
+                    <p class="mb-0 fw-bold text-muted">No Wagering</p>
                 </div>
-                <div class="text-start mt-3">
-                    <small class="text-muted">18+. Min deposit $20</small>
+
+                <div class="d-grid gap-2 mb-3">
+                    <a href="https://site.gotoplayojo.com/index.php?aname=catsycom92&zone_id=80spins_roc" target="_blank" class="btn btn-primary fw-bold">
+                        Claim Bonus
+                    </a>
+                    <a class="btn btn-outline-secondary btn-sm">Read Review</a>
                 </div>
+
+                <div class="d-flex justify-content-around text-center pt-3 border-top">
+                    <div>
+                        <small class="text-muted d-block">Withdrawal</small>
+                        <span class="fw-bold">24h</span>
+                    </div>
+                    <div>
+                        <small class="text-muted d-block">Games</small>
+                        <span class="fw-bold">3000+</span>
+                    </div>
+                    <div>
+                        <small class="text-muted d-block">Min Deposit</small>
+                        <span class="fw-bold">$20</span>
+                    </div>
+                </div>
+
+                <small class="text-muted d-block mt-3">18+ | T&C Apply</small>
             </div>
         </div>
     </div>
 
   
     <!-- Casino 10 -->
-   <div class="col-md-6">
-        <div class="card h-100 border-0 shadow position-relative casino-card">
-            <!-- Rank badge -->
-            <div class="rank-badge position-absolute top-0 start-0 p-3">
-                <span class="badge bg-secondary text-dark fs-6">Top 10</span>
+    <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 shadow-sm position-relative casino-card" style="background: white;">
+            <div class="position-absolute top-0 start-0 m-3">
+                <span class="badge bg-secondary text-white" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;">Top 10</span>
             </div>
-            <div class="card-body text-center">
-                <div class="d-flex align-items-center justify-content-around">
-                    
-                    <img src="./assets/primeBetz-logo.png" class="custom-casino-square w-25" alt="PrimeBetz Casino">
-                    <h6 class="fw-bold text-black">PrimeBetz Casino</h6>
+            
+            <div class="card-body text-center p-4">
+                <img src="./assets/primeBetz-logo.png" class="mb-3" loading="lazy" alt="PrimeBetz Casino" style="width: 80px; height: 80px; object-fit: contain;">
+                
+                <h3 class="h5 fw-bold mb-2">PrimeBetz</h3>
+                
+                <div class="text-warning mb-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <span class="text-dark ms-1" style="font-size: 0.9rem;">4.5/5</span>
                 </div>
-                <p class="lead text-muted mt-4">Best Bonus</p>
-                <h3 class="h4 text-warning">Up to €2750 + 100 FS</h3>
-                <div class="d-flex justify-content-between py-2">
-                    <a class="btn btn-lg custom-text-color fw-light">Read Review</a>
-                    <button class="btn custom-color order-0 fw-light">
-                        <a class="text-white text-decoration-none" href="https://record.primebetzaffiliates.com/_vWHV8aSI7MvUOsjNOfgKeWNd7ZgqdRLk/1/ " target="_blank">Claim Bonus</a>
-                    </button>
+
+                <div class="p-3 mb-3" style="background: linear-gradient(135deg, #fff3cd, #ffe8a1); border-radius: 10px;">
+                    <p class="text-dark mb-1 fw-bold" style="font-size: 0.85rem;">🎁 Best Bonus</p>
+                    <h4 class="h5 fw-bold mb-1 text-warning">Up to €2750</h4>
+                    <p class="mb-0 fw-bold text-warning">+ 100 Free Spins</p>
                 </div>
-                <div class="text-start mt-3">
-                    <small class="text-muted">18+. Play slots with over 5000 casino games.</small>
+
+                <div class="d-grid gap-2 mb-3">
+                    <a href="https://record.primebetzaffiliates.com/_vWHV8aSI7MvUOsjNOfgKeWNd7ZgqdRLk/1/" target="_blank" class="btn btn-warning fw-bold">
+                        Claim Bonus
+                    </a>
+                    <a class="btn btn-outline-secondary btn-sm">Read Review</a>
                 </div>
+
+                <div class="d-flex justify-content-around text-center pt-3 border-top">
+                    <div>
+                        <small class="text-muted d-block">Withdrawal</small>
+                        <span class="fw-bold">24-48h</span>
+                    </div>
+                    <div>
+                        <small class="text-muted d-block">Games</small>
+                        <span class="fw-bold">5000+</span>
+                    </div>
+                    <div>
+                        <small class="text-muted d-block">Min Deposit</small>
+                        <span class="fw-bold">€20</span>
+                    </div>
+                </div>
+
+                <small class="text-muted d-block mt-3">18+ | T&C Apply</small>
             </div>
         </div>
     </div>
-       <!-- Casino 11 -->
-
-   <div class="col-md-6">
-        <div class="card h-100 border-0 shadow position-relative casino-card">
-            <!-- Rank badge -->
-            <div class="rank-badge position-absolute top-0 start-0 p-3">
-                <span class="badge bg-secondary text-dark fs-6"></span>
+    <!-- Casino 11 -->
+    <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 shadow-sm position-relative casino-card" style="background: white;">
+            <div class="position-absolute top-0 start-0 m-3">
+                <span class="badge bg-secondary text-white" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;"></span>
             </div>
-            <div class="card-body text-center">
-                <div class="d-flex align-items-center justify-content-around">
-                    
-                    <img src="./assets/zinkra-casino.webp" class="custom-casino-square w-25" alt="Zinkra">
-                    <h6 class="fw-bold text-black">Zinkra</h6>
+            
+            <div class="card-body text-center p-4">
+                <img src="./assets/zinkra-casino.webp" class="mb-3" loading="lazy" alt="Zinkra" style="width: 80px; height: 80px; object-fit: contain;">
+                
+                <h3 class="h5 fw-bold mb-2">Zinkra</h3>
+                
+                <div class="text-warning mb-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <span class="text-dark ms-1" style="font-size: 0.9rem;">4.6/5</span>
                 </div>
-                <p class="lead text-muted mt-4">Best Bonus Package</p>
-                <h3 class="h4 text-warning">100% Up To €800 + 100 FS</h3>
-                <div class="d-flex justify-content-between py-2">
-                    <a class="btn btn-lg custom-text-color fw-light">Read Review</a>
-                    <button class="btn custom-color order-0 fw-light">
-                        <a class="text-white text-decoration-none" href="https://record.zinkra.com/_FxWznIUl6-FZSuvhn4yj1mNd7ZgqdRLk/1/?pg=1" target="_blank">Claim Bonus</a>
-                    </button>
+
+                <div class="p-3 mb-3" style="background: linear-gradient(135deg, #d4edda, #c3e6cb); border-radius: 10px;">
+                    <p class="text-dark mb-1 fw-bold" style="font-size: 0.85rem;">🎁 Bonus Package</p>
+                    <h4 class="h5 fw-bold mb-1 text-success">100% Up To €800</h4>
+                    <p class="mb-0 fw-bold text-success">+ 100 Free Spins</p>
                 </div>
-                <div class="text-start mt-3">
-                    <small class="text-muted">18+. Min deposit $20</small>
+
+                <div class="d-grid gap-2 mb-3">
+                    <a href="https://record.zinkra.com/_FxWznIUl6-FZSuvhn4yj1mNd7ZgqdRLk/1/?pg=1" target="_blank" class="btn btn-success fw-bold">
+                        Claim Bonus
+                    </a>
+                    <a class="btn btn-outline-secondary btn-sm">Read Review</a>
                 </div>
+
+                <div class="d-flex justify-content-around text-center pt-3 border-top">
+                    <div>
+                        <small class="text-muted d-block">Withdrawal</small>
+                        <span class="fw-bold">24-48h</span>
+                    </div>
+                    <div>
+                        <small class="text-muted d-block">Games</small>
+                        <span class="fw-bold">3200+</span>
+                    </div>
+                    <div>
+                        <small class="text-muted d-block">Min Deposit</small>
+                        <span class="fw-bold">$20</span>
+                    </div>
+                </div>
+
+                <small class="text-muted d-block mt-3">18+ | T&C Apply</small>
             </div>
         </div>
     </div>
     <!-- Casino 12 -->
-   <div class="col-md-6">
-        <div class="card h-100 border-0 shadow position-relative casino-card">
-            <!-- Rank badge -->
-            <div class="rank-badge position-absolute top-0 start-0 p-3">
-                <span class="badge bg-secondary text-dark fs-6"></span>
+    <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 shadow-sm position-relative casino-card" style="background: white;">
+            <div class="position-absolute top-0 start-0 m-3">
+                <span class="badge bg-secondary text-white" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;"></span>
             </div>
-            <div class="card-body text-center">
-                <div class="d-flex align-items-center justify-content-around">
-                    
-                    <img src="./assets/Swanky_Bingo.webp" class="custom-casino-square w-25" alt="Swanky Bingo">
-                    <h6 class="fw-bold text-black">Swanky Bingo</h6>
+            
+            <div class="card-body text-center p-4">
+                <img src="./assets/Swanky_Bingo.webp" class="mb-3" loading="lazy" alt="Swanky Bingo" style="width: 80px; height: 80px; object-fit: contain;">
+                
+                <h3 class="h5 fw-bold mb-2">Swanky Bingo</h3>
+                
+                <div class="text-warning mb-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <span class="text-dark ms-1" style="font-size: 0.9rem;">4.2/5</span>
                 </div>
-                <p class="lead text-muted mt-4">Bonus Package</p>
-                <h3 class="h4 text-warning">Up To 100 + 50FS</h3>
-                <div class="d-flex justify-content-between py-2">
-                    <a class="btn btn-lg custom-text-color fw-light">Read Review</a>
-                    <button class="btn custom-color order-0 fw-light">
-                        <a class="text-white text-decoration-none" href="https://ads.ventureaffiliates.com/Redirect.aspx?mid=39&sid=1808&cid=&pid=&affid=879" target="_blank">Claim Bonus</a>
-                    </button>
+
+                <div class="p-3 mb-3" style="background: linear-gradient(135deg, #e3f2fd, #bbdefb); border-radius: 10px;">
+                    <p class="text-dark mb-1 fw-bold" style="font-size: 0.85rem;">🎁 Bonus Package</p>
+                    <h4 class="h5 fw-bold mb-1 text-primary">Up To £100</h4>
+                    <p class="mb-0 fw-bold text-primary">+ 50 Free Spins</p>
                 </div>
-                <div class="text-start mt-3">
-                    <small class="text-muted">18+. Min deposit $20</small>
+
+                <div class="d-grid gap-2 mb-3">
+                    <a href="https://ads.ventureaffiliates.com/Redirect.aspx?mid=39&sid=1808&cid=&pid=&affid=879" target="_blank" class="btn btn-primary fw-bold">
+                        Claim Bonus
+                    </a>
+                    <a class="btn btn-outline-secondary btn-sm">Read Review</a>
                 </div>
+
+                <div class="d-flex justify-content-around text-center pt-3 border-top">
+                    <div>
+                        <small class="text-muted d-block">Withdrawal</small>
+                        <span class="fw-bold">24-48h</span>
+                    </div>
+                    <div>
+                        <small class="text-muted d-block">Games</small>
+                        <span class="fw-bold">1500+</span>
+                    </div>
+                    <div>
+                        <small class="text-muted d-block">Min Deposit</small>
+                        <span class="fw-bold">$20</span>
+                    </div>
+                </div>
+
+                <small class="text-muted d-block mt-3">18+ | T&C Apply</small>
             </div>
         </div>
     </div>
     
 
     <!-- Casino 13 -->
-   <div class="col-md-6">
-        <div class="card h-100 border-0 shadow position-relative casino-card">
-            <div class="rank-badge position-absolute top-0 start-0 p-3">
-                <span class="badge bg-secondary text-dark fs-6"></span>
+    <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 shadow-sm position-relative casino-card" style="background: white;">
+            <div class="position-absolute top-0 start-0 m-3">
+                <span class="badge bg-secondary text-white" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;"></span>
             </div>
-            <div class="card-body text-center">
-                <div class="d-flex align-items-center justify-content-around">
-                    <!-- TODO: Convert to WebP - Current: JPG format -->
-                    <img src="./assets/touch-casino.webp" class="custom-casino-square w-25" loading="lazy" alt="Touch Casino">
-                    <h6 class="fw-bold text-black">Touch Casino</h6>
+            
+            <div class="card-body text-center p-4">
+                <img src="./assets/touch-casino.webp" class="mb-3" loading="lazy" alt="Touch Casino" style="width: 80px; height: 80px; object-fit: contain;">
+                
+                <h3 class="h5 fw-bold mb-2">Touch Casino</h3>
+                
+                <div class="text-warning mb-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <span class="text-dark ms-1" style="font-size: 0.9rem;">4.3/5</span>
                 </div>
-                <p class="lead text-muted mt-4">Best Welcome Bonus</p>
-                <h3 class="h4 text-warning">100% Up To 1000€</h3>
-                <div class="d-flex justify-content-between py-2">
-                    <a class="btn btn-lg custom-text-color fw-light">Read Review</a>
-                    <button class="btn custom-color order-0 fw-light">
-                        <a class="text-white text-decoration-none" href="https://record.touchcasinoaffiliates.com/_W9ukSq1pbAcr8Syj4RJS-mNd7ZgqdRLk/1/?pg=1" target="_blank">Claim Bonus</a>
-                    </button>
+
+                <div class="p-3 mb-3" style="background: linear-gradient(135deg, #fff3cd, #ffe8a1); border-radius: 10px;">
+                    <p class="text-dark mb-1 fw-bold" style="font-size: 0.85rem;">🎁 Welcome Bonus</p>
+                    <h4 class="h5 fw-bold mb-1 text-warning">100% Up To €1000</h4>
+                    <p class="mb-0 fw-bold text-warning">Best Offer</p>
                 </div>
-                <div class="text-start mt-3">
-                    <small class="text-muted">18+. Min deposit $20</small>
+
+                <div class="d-grid gap-2 mb-3">
+                    <a href="https://record.touchcasinoaffiliates.com/_W9ukSq1pbAcr8Syj4RJS-mNd7ZgqdRLk/1/?pg=1" target="_blank" class="btn btn-warning fw-bold">
+                        Claim Bonus
+                    </a>
+                    <a class="btn btn-outline-secondary btn-sm">Read Review</a>
                 </div>
+
+                <div class="d-flex justify-content-around text-center pt-3 border-top">
+                    <div>
+                        <small class="text-muted d-block">Withdrawal</small>
+                        <span class="fw-bold">24-48h</span>
+                    </div>
+                    <div>
+                        <small class="text-muted d-block">Games</small>
+                        <span class="fw-bold">2800+</span>
+                    </div>
+                    <div>
+                        <small class="text-muted d-block">Min Deposit</small>
+                        <span class="fw-bold">$20</span>
+                    </div>
+                </div>
+
+                <small class="text-muted d-block mt-3">18+ | T&C Apply</small>
             </div>
         </div>
     </div>
@@ -706,7 +1162,8 @@
                 <!-- TODO: Convert to WebP - Current: JPG format -->
                 <img src="./assets/Instant-Withdrawal-Casinos.webp" class="card-img-top" alt="Instant Withdrawal Casinos: Top 5 Casinos with Under-1-Hour Payouts" loading="lazy" width="400" height="300">
                 <div class="card-body">
-                  <time class="text-muted" datetime="2026-02-11"><i class="bi bi-calendar" aria-hidden="true"></i> 11 February 2026</time>
+                  <span class="category-badge category-instant">💰 Instant Withdrawal</span>
+                  <time class="text-muted d-block" datetime="2026-02-11"><i class="bi bi-calendar" aria-hidden="true"></i> 11 February 2026</time>
                   <h3 class="h4 mt-2"><a class="text-black text-decoration-none" href="news.html">Top 5 Casinos with Under - 1 Hour Payouts</a></h3>
                   <p class="text-muted">Instant Withdrawal Casinos</p>
                   <ul>
@@ -726,7 +1183,8 @@
                 <!-- TODO: Convert to WebP - Current: JPG format -->
                 <img src="./assets/madrid.webp" class="card-img-top" alt="GambleAware responsible gambling vision" loading="lazy" width="400" height="300">
                 <div class="card-body">
-                  <time class="text-muted" datetime="2026-02-10"><i class="bi bi-calendar" aria-hidden="true"></i> 10 February 2026</time>
+                  <span class="category-badge category-events">🎪 Events</span>
+                  <time class="text-muted d-block" datetime="2026-02-10"><i class="bi bi-calendar" aria-hidden="true"></i> 10 February 2026</time>
                   <h3 class="h4 mt-2"><a class="text-black text-decoration-none" href="news.html">Discover the Ultimate Affiliate Networking Event: AFFPAP Conference in Madrid, May 18-20</a></h3>
                   <p class="text-muted">Are you ready to level up your <a href="https://affpapaconf.com/madrid-2026/">affiliate marketing game?</a></p>
                 </div>
@@ -739,7 +1197,8 @@
                 <!-- TODO: Convert to WebP - Current: PNG 1,285 KiB, Est savings: 1,265 KiB + resize -->
                 <img src="./assets/igaming-news.webp" class="card-img-top" alt="igaming news image " loading="lazy" width="400" height="300">
                 <div class="card-body">
-                  <time class="text-muted" datetime="2026-01-21"><i class="bi bi-calendar" aria-hidden="true"></i> 21 January 2026</time>
+                  <span class="category-badge category-industry">📰 Industry News</span>
+                  <time class="text-muted d-block" datetime="2026-01-21"><i class="bi bi-calendar" aria-hidden="true"></i> 21 January 2026</time>
                   <h3 class="h4 mt-2"><a class="text-black text-decoration-none" href="news.html">iGaming Events Calendar: Networking Opportunities That Shape the Industry
 </a></h3>
                   <p class="text-muted">iGaming Events Matter More Than Ever.</p>
@@ -752,7 +1211,8 @@
                 <!-- TODO: Convert to WebP - Current: PNG 382 KiB, Est savings: 361 KiB + resize -->
                 <img src="./assets/slots-news3.webp" class="card-img-top" alt="slotplace image " loading="lazy" width="400" height="300">
                 <div class="card-body">
-                  <time class="text-muted" datetime="2025-03-01"><i class="bi bi-calendar" aria-hidden="true"></i> 12 January 2026</time>
+                  <span class="category-badge category-guides">📚 Guides</span>
+                  <time class="text-muted d-block" datetime="2025-03-01"><i class="bi bi-calendar" aria-hidden="true"></i> 12 January 2026</time>
                   <h3 class="h4 mt-2"><a class="text-black text-decoration-none" href="news.html">The Ultimate Guide to Online Slots: Tips and Strategies for Winning Big
 </a></h3>
                   <p class="text-muted">Playing Slots Online with Real Money.</p>
@@ -767,7 +1227,8 @@
                 <!-- TODO: Convert to WebP - Current: PNG 355 KiB, Est savings: 334 KiB + resize -->
                 <img src="./assets/slot-place-news.webp" class="card-img-top" alt="slotplace image " loading="lazy" width="400" height="300">
                 <div class="card-body">
-                  <time class="text-muted" datetime="2025-03-01"><i class="bi bi-calendar" aria-hidden="true"></i> 3 January 2026</time>
+                  <span class="category-badge category-guides">📚 Reviews</span>
+                  <time class="text-muted d-block" datetime="2025-03-01"><i class="bi bi-calendar" aria-hidden="true"></i> 3 January 2026</time>
                   <h3 class="h4 mt-2"><a class="text-black text-decoration-none" href="news.html">Discovering the Best Online Casinos: Spotlight on SlotPlace and Golden Reels Casino
 </a></h3>
                   <p class="text-muted">Tips for Safe and Fun Online Casino Play.</p>
@@ -782,7 +1243,8 @@
                 <!-- TODO: Convert to WebP - Current: JPG format -->
                 <img src="./assets/btc-image.webp" class="card-img-top" alt="GambleAware responsible gambling vision" loading="lazy" width="400" height="300">
                 <div class="card-body">
-                  <time class="text-muted" datetime="2025-12-20"><i class="bi bi-calendar" aria-hidden="true"></i> 20 December 2025</time>
+                  <span class="category-badge category-events">🛡️ Responsibility</span>
+                  <time class="text-muted d-block" datetime="2025-12-20"><i class="bi bi-calendar" aria-hidden="true"></i> 20 December 2025</time>
                   <h3 class="h4 mt-2"><a class="text-black text-decoration-none" href="news.html">GambleAware Announces New Vision for Safer Gambling in 2026</a></h3>
                   <p class="text-muted">Latest updates on responsible gambling initiatives and player protection measures.</p>
                 </div>
@@ -794,7 +1256,8 @@
                 <!-- TODO: Convert to WebP - Current: JPEG format -->
                 <img src="./assets/puzle-img.webp" class="card-img-top" alt="Slotegrator and Greentube partnership" loading="lazy" width="400" height="300">
                 <div class="card-body">
-                  <time class="text-muted" datetime="2025-11-10"><i class="bi bi-calendar" aria-hidden="true"></i> 8 January 2025</time>
+                  <span class="category-badge category-partnership">🤝 Partnership</span>
+                  <time class="text-muted d-block" datetime="2025-11-10"><i class="bi bi-calendar" aria-hidden="true"></i> 8 January 2025</time>
                   <h3 class="h4 mt-2"><a class="text-black text-decoration-none" href="news.html">Slotegrator and Greentube Announce Strategic Partnership</a></h3>
                   <p class="text-muted">Major collaboration bringing innovative gaming content to new markets.</p>
                 </div>
@@ -806,7 +1269,8 @@
                 <!-- TODO: Convert to WebP - Current: JPG format -->
                 <img src="./assets/spade-img.webp" class="card-img-top" alt="Pragmatic Play live casino games" loading="lazy" width="400" height="300">
                 <div class="card-body">
-                  <time class="text-muted" datetime="2025-04-03"><i class="bi bi-calendar" aria-hidden="true"></i> 3 April 2024</time>
+                  <span class="category-badge category-partnership">🤝 Partnership</span>
+                  <time class="text-muted d-block" datetime="2025-04-03"><i class="bi bi-calendar" aria-hidden="true"></i> 3 April 2024</time>
                   <h3 class="h4 mt-2"><a class="text-black text-decoration-none" href="news.html">Pragmatic Play & Novibet: New Live Casino Partnership</a></h3>
                   <p class="text-muted">Expanding live dealer gaming options with cutting-edge technology.</p>
                 </div>
@@ -923,12 +1387,10 @@
          </div>
          
          <div class="col-6 col-md-3">
-            <h3 class="h6 fw-bold text-white mb-3">Bonus Types</h3>
+            <h3 class="h6 fw-bold text-white mb-3">Quick Links</h3>
             <ul class="navbar-nav">
                <li><a class="nav-link text-white py-1" href="index.html">Home</a></li>
-               <li><a class="nav-link text-white py-1" href="nodeposit.html">No Deposit Bonus</a></li>
-               <li><a class="nav-link text-white py-1" href="welcomebonus.html">Welcome Bonus</a></li>
-               <li><a class="nav-link text-white py-1" href="freespins.html">Free Spins</a></li>
+               <li><a class="nav-link text-white py-1" href="reviews.html">Reviews</a></li>
             </ul>
          </div>
          
@@ -957,13 +1419,375 @@
 
 
    
-   
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
    <script src="./main.js"></script>
 
    <script type="text/javascript" src="https://js.essential.partners/javascript.php?prefix=aJTkbc3ZJkPUOsjNOfgKeWNd7ZgqdRLk&amp;media=2&amp;campaign=1"></script>
    
+   <!-- Custom CSS for Modern UI/UX -->
+   <style>
+      /* Sticky Promotional Banner */
+      .sticky-promo-banner {
+         position: fixed;
+         top: 100px;
+         left: 0;
+         right: 0;
+         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+         z-index: 1019;
+         transform: translateY(-150%);
+         transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+         opacity: 0;
+      }
+
+      .sticky-promo-banner.show {
+         transform: translateY(0);
+         opacity: 1;
+      }
+
+      .sticky-promo-banner .btn-link:hover {
+         opacity: 0.8;
+      }
+
+      @keyframes slideDown {
+         from {
+            transform: translateY(-150%);
+            opacity: 0;
+         }
+         to {
+            transform: translateY(0);
+            opacity: 1;
+         }
+      }
+
+      /* Smooth animations */
+      @keyframes fadeIn {
+         from {
+            opacity: 0;
+            transform: translateY(20px);
+         }
+         to {
+            opacity: 1;
+            transform: translateY(0);
+         }
+      }
+
+      @keyframes slideInLeft {
+         from {
+            opacity: 0;
+            transform: translateX(-30px);
+         }
+         to {
+            opacity: 1;
+            transform: translateX(0);
+         }
+      }
+
+      /* Hero section animations */
+      .hero-section h1 {
+         animation: fadeIn 0.8s ease-out;
+      }
+
+      .hero-section p {
+         animation: fadeIn 1s ease-out 0.2s backwards;
+      }
+
+      .hero-section .badge {
+         animation: fadeIn 0.6s ease-out backwards;
+      }
+
+      .hero-section .badge:nth-child(1) {
+         animation-delay: 0.3s;
+      }
+
+      .hero-section .badge:nth-child(2) {
+         animation-delay: 0.4s;
+      }
+
+      /* Casino card hover effects */
+      .casino-card {
+         transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+         overflow: visible;
+         position: relative;
+      }
+
+      .casino-card:hover {
+         transform: translateY(-15px) scale(1.02);
+         box-shadow: 0 20px 50px rgba(102, 126, 234, 0.25) !important;
+      }
+
+      .casino-card img {
+         transition: all 0.4s ease-in-out;
+      }
+
+      .casino-card:hover img {
+         transform: scale(1.15) rotate(2deg);
+      }
+
+      .casino-card .btn {
+         transition: all 0.3s ease-in-out;
+         position: relative;
+         overflow: hidden;
+      }
+
+      .casino-card .btn::before {
+         content: '';
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         width: 0;
+         height: 0;
+         border-radius: 50%;
+         background: rgba(255,255,255,0.3);
+         transform: translate(-50%, -50%);
+         transition: width 0.6s, height 0.6s;
+      }
+
+      .casino-card .btn:hover::before {
+         width: 300px;
+         height: 300px;
+      }
+
+      .casino-card:hover .btn {
+         transform: translateY(-2px);
+         box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      }
+
+      .casino-card .badge {
+         transition: all 0.3s ease-in-out;
+      }
+
+      .casino-card:hover .badge {
+         transform: scale(1.1);
+      }
+
+      .rank-badge {
+         z-index: 10;
+      }
+
+      .rank-badge .badge {
+         box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+         animation: slideInLeft 0.6s ease-out;
+      }
+
+      /* Pulse animation for top casinos */
+      @keyframes pulse {
+         0%, 100% {
+            box-shadow: 0 4px 12px rgba(255,215,0,0.4);
+         }
+         50% {
+            box-shadow: 0 4px 20px rgba(255,215,0,0.7);
+         }
+      }
+
+      .casino-card:hover .rank-badge .badge {
+         animation: pulse 2s infinite;
+      }
+
+      /* Why Choose Us section hover effects */
+      .row.g-4 > div > .card {
+         transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+
+      .row.g-4 > div > .card:hover {
+         transform: translateY(-10px) scale(1.02);
+         box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2) !important;
+      }
+
+      .row.g-4 > div > .card i {
+         transition: all 0.3s ease-in-out;
+      }
+
+      .row.g-4 > div > .card:hover i {
+         transform: scale(1.15) rotate(5deg);
+      }
+
+      /* News cards hover effects */
+      section.bg-light article.card {
+         transition: all 0.3s ease-in-out;
+         cursor: pointer;
+      }
+
+      section.bg-light article.card:hover {
+         transform: translateY(-8px);
+         box-shadow: 0 12px 28px rgba(0,0,0,0.15) !important;
+      }
+
+      section.bg-light article.card img {
+         transition: transform 0.4s ease-in-out;
+      }
+
+      section.bg-light article.card:hover img {
+         transform: scale(1.05);
+      }
+
+      section.bg-light article.card h3 a {
+         transition: color 0.2s ease-in-out;
+      }
+
+      section.bg-light article.card:hover h3 a {
+         color: #667eea !important;
+      }
+
+      /* FAQ cards hover effects */
+      section[aria-labelledby="faq-section"] .card {
+         transition: all 0.3s ease-in-out;
+      }
+
+      section[aria-labelledby="faq-section"] .card:hover {
+         transform: translateX(10px);
+         box-shadow: 0 8px 20px rgba(102, 126, 234, 0.15) !important;
+         border-left: 4px solid #667eea;
+      }
+
+      section[aria-labelledby="faq-section"] .badge {
+         transition: all 0.3s ease-in-out;
+      }
+
+      section[aria-labelledby="faq-section"] .card:hover .badge {
+         transform: scale(1.1);
+      }
+
+      /* Scroll fade-in animation */
+      .fade-in-section {
+         opacity: 0;
+         transform: translateY(30px);
+         transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      }
+
+      .fade-in-section.is-visible {
+         opacity: 1;
+         transform: translateY(0);
+      }
+
+      /* Button hover effects */
+      .btn {
+         transition: all 0.3s ease-in-out;
+      }
+
+      .btn:hover {
+         transform: translateY(-2px);
+         box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+      }
+
+      /* Smooth scrolling */
+      html {
+         scroll-behavior: smooth;
+      }
+
+      /* Category badges for news */
+      .category-badge {
+         display: inline-block;
+         padding: 0.35rem 0.8rem;
+         border-radius: 20px;
+         font-size: 0.75rem;
+         font-weight: 600;
+         text-transform: uppercase;
+         letter-spacing: 0.5px;
+         margin-bottom: 0.5rem;
+      }
+
+      .category-instant { background: #17a2b8; color: white; }
+      .category-events { background: #20c997; color: white; }
+      .category-industry { background: #fd7e14; color: white; }
+      .category-guides { background: #28a745; color: white; }
+      .category-partnership { background: #6f42c1; color: white; }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+         .hero-section h1 {
+            font-size: 2rem !important;
+         }
+
+         .casino-card:hover {
+            transform: translateY(-5px);
+         }
+      }
+
+      /* Improve loading performance */
+      * {
+         -webkit-font-smoothing: antialiased;
+         -moz-osx-font-smoothing: grayscale;
+      }
+   </style>
+
+   <!-- Scroll Animation JavaScript -->
+   <script>
+      // Close Sticky Banner Function
+      function closeStickyBanner() {
+         const banner = document.getElementById('stickyPromoBanner');
+         banner.classList.remove('show');
+         sessionStorage.setItem('promoBannerClosed', 'true');
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+         // Add fade-in class to sections
+         const sections = document.querySelectorAll('.container, .container-lg');
+         sections.forEach(section => {
+            section.classList.add('fade-in-section');
+         });
+
+         // Intersection Observer for scroll animations
+         const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+               if (entry.isIntersecting) {
+                  entry.target.classList.add('is-visible');
+               }
+            });
+         }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+         });
+
+         sections.forEach(section => {
+            observer.observe(section);
+         });
+
+         // Smooth scroll to top on page load
+         window.scrollTo({ top: 0, behavior: 'smooth' });
+
+         // Enhanced navbar scroll effect
+         const navbar = document.querySelector('.navbar');
+         const stickyBanner = document.getElementById('stickyPromoBanner');
+         let lastScrollTop = 0;
+         let bannerClosed = sessionStorage.getItem('promoBannerClosed') === 'true';
+         
+         window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // Add shadow when scrolled
+            if (scrollTop > 50) {
+               navbar.classList.add('scrolled');
+            } else {
+               navbar.classList.remove('scrolled');
+            }
+
+            // Show sticky banner after scrolling past hero section (around 300px)
+            if (scrollTop > 300 && !bannerClosed) {
+               stickyBanner.classList.add('show');
+            } else if (scrollTop <= 300) {
+               stickyBanner.classList.remove('show');
+            }
+            
+            lastScrollTop = scrollTop;
+         });
+
+         // Highlight active nav link based on current page
+         const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+         const navLinks = document.querySelectorAll('.nav-link');
+         
+         navLinks.forEach(link => {
+            const href = link.getAttribute('href');
+            if (href === currentPage) {
+               link.classList.add('active');
+            } else {
+               link.classList.remove('active');
+            }
+         });
+      });
+   </script>
+
 </body>
 
 </html>
