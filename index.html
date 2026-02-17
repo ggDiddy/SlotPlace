@@ -61,11 +61,16 @@
 
    <!-- Critical CSS - Inline for faster initial render -->
    <style>
-   body{font-family:'Poppins',sans-serif;margin:0;padding:0;background:#f8f9fa}
+   body{font-family:'Poppins',sans-serif;margin:0;padding:0;background:#f8f9fa;min-height:100vh}
    .custom-color{background:linear-gradient(to right,#ff9966,#ff5e62)}
    .navbar{padding:.5rem 1rem}
    .container{max-width:1140px;margin:0 auto;padding:0 15px}
    img{max-width:100%;height:auto}
+   main{display:block;width:100%;min-height:calc(100vh - 200px)}
+   @media (max-width: 576px){
+      .container{padding:0 10px}
+      body{overflow-x:hidden}
+   }
    </style>
 
    <!-- Fonts & Styles -->
@@ -280,7 +285,7 @@
 
     
     <!-- Hero Section with Modern Gradient Design -->
-<section class="container-lg p-0" aria-labelledby="hero-section">
+<section class="container" aria-labelledby="hero-section">
 
     <!-- Modern Hero Section -->
     <section class="hero-section py-5" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; margin-bottom: 3rem; position: relative; overflow: hidden;">
@@ -1714,6 +1719,33 @@
 
          .casino-card:hover {
             transform: translateY(-5px);
+         }
+         
+         body {
+            overflow-x: hidden;
+         }
+         
+         main {
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+         }
+         
+         .container, .container-lg {
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+            width: 100% !important;
+            max-width: 100% !important;
+         }
+         
+         .sticky-promo-banner {
+            top: 60px;
+            font-size: 0.85rem;
+         }
+         
+         .row {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
          }
       }
 
