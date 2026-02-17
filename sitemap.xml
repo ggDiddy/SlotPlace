@@ -5,7 +5,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://www.slot-place.com/</loc>
-    <lastmod>2026-02-16</lastmod>
+    <lastmod>2026-02-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -13,7 +13,29 @@
   <!-- Reviews Page -->
   <url>
     <loc>https://www.slot-place.com/reviews.html</loc>
-    <lastmod>2026-02-16</lastmod>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Individual Casino Reviews -->
+  <url>
+    <loc>https://www.slot-place.com/reviews-zinkra.html</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.slot-place.com/reviews-bcgame.html</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.slot-place.com/reviews-brango.html</loc>
+    <lastmod>2026-02-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -21,7 +43,7 @@
   <!-- Free Spins Page -->
   <url>
     <loc>https://www.slot-place.com/freespins.html</loc>
-    <lastmod>2026-02-16</lastmod>
+    <lastmod>2026-02-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -29,7 +51,7 @@
   <!-- News Page -->
   <url>
     <loc>https://www.slot-place.com/news.html</loc>
-    <lastmod>2026-02-16</lastmod>
+    <lastmod>2026-02-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -37,7 +59,7 @@
   <!-- FAQ Page -->
   <url>
     <loc>https://www.slot-place.com/faq.html</loc>
-    <lastmod>2026-02-16</lastmod>
+    <lastmod>2026-02-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -45,7 +67,7 @@
   <!-- About Us / Contact Page -->
   <url>
     <loc>https://www.slot-place.com/aboutus.html</loc>
-    <lastmod>2026-02-16</lastmod>
+    <lastmod>2026-02-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
