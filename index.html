@@ -67,9 +67,15 @@
    .container{max-width:1140px;margin:0 auto;padding:0 15px}
    img{max-width:100%;height:auto}
    main{display:block;width:100%;min-height:calc(100vh - 200px)}
-   @media (max-width: 576px){
-      .container{padding:0 10px}
+   .hero-section{display:block!important;visibility:visible!important;opacity:1!important}
+   .casino-card{display:block!important;visibility:visible!important}
+   @media (max-width: 768px){
+      .container{padding:0 15px!important;width:100%!important;max-width:100%!important}
       body{overflow-x:hidden}
+      .row{margin-left:-15px;margin-right:-15px}
+      .hero-section{padding:2rem 0!important}
+      .display-2{font-size:1.75rem!important}
+      section{display:block!important}
    }
    </style>
 
@@ -77,8 +83,8 @@
    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
    <noscript><link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"></noscript>
    
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" media="print" onload="this.media='all'">
-   <noscript><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"></noscript>
+   <!-- Bootstrap CSS - Load immediately for mobile compatibility -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
    
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" media="print" onload="this.media='all'">
    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"></noscript>
@@ -380,8 +386,10 @@
          </div>
       </div>
     </section>
+
 <!-- card -->
 <!-- Top Casino Cards with Ranking -->
+<div class="container">
 <div class="row mt-5">
    <div class="col text-center">
     <h2 class="h2 fw-bold mb-3" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
@@ -1112,6 +1120,7 @@
     <!-- Additional Casinos (3, 4, etc.) -->
 
 </div>
+</div>
 
 </section>
     <!-- WIN MORE WITH US -->
@@ -1731,11 +1740,45 @@
             opacity: 1 !important;
          }
          
-         .container, .container-lg {
+         .hero-section {
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+            padding: 1.5rem 0 !important;
+            margin-bottom: 2rem !important;
+         }
+         
+         .container {
             padding-left: 15px !important;
             padding-right: 15px !important;
             width: 100% !important;
             max-width: 100% !important;
+         }
+         
+         .row {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            display: flex !important;
+            flex-wrap: wrap !important;
+         }
+         
+         .col, .col-lg-4, .col-md-6, .col-lg-10 {
+            display: block !important;
+            visibility: visible !important;
+            width: 100% !important;
+            padding: 0 15px !important;
+         }
+         
+         .casino-card {
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+            margin-bottom: 1rem;
+         }
+         
+         .card {
+            display: block !important;
+            visibility: visible !important;
          }
          
          .sticky-promo-banner {
@@ -1743,9 +1786,23 @@
             font-size: 0.85rem;
          }
          
-         .row {
-            margin-left: 0 !important;
-            margin-right: 0 !important;
+         section {
+            display: block !important;
+            visibility: visible !important;
+         }
+         
+         .display-2 {
+            font-size: 1.75rem !important;
+            line-height: 1.3 !important;
+         }
+         
+         .lead {
+            font-size: 1rem !important;
+         }
+         
+         .badge {
+            font-size: 0.75rem !important;
+            padding: 0.35rem 0.65rem !important;
          }
       }
 
