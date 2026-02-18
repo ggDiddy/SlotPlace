@@ -1,16 +1,17 @@
-const CACHE_VERSION = 'v1';
+const CACHE_VERSION = 'v2';
 const CACHE_NAME = `slotplace-static-${CACHE_VERSION}`;
 
 const PRECACHE_URLS = [
   '/',
   '/index.html',
   '/styles.css',
+  '/animations.css',
   '/main.js',
-  '/assets/bghero.png',
-  '/assets/igaming-news.png',
-  '/assets/slots-news3.png',
-  '/assets/slot-place-logo.png',
-  '/assets/Screenshot%202026-01-03%20220350.png'
+  '/animations.js',
+  '/assets/logo-vegasino.webp',
+  '/assets/BC-Game-Logo.webp',
+  '/assets/Casina-logo.webp',
+  '/assets/zinkra-casino.webp'
 ];
 
 self.addEventListener('install', event => {

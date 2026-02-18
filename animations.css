@@ -1,0 +1,367 @@
+/* Sticky Promotional Banner */
+.sticky-promo-banner {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   z-index: 1019;
+   transform: translateY(-150%);
+   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+   opacity: 0;
+}
+
+.sticky-promo-banner.show {
+   transform: translateY(0);
+   opacity: 1;
+}
+
+.sticky-promo-banner .btn-link:hover {
+   opacity: 0.8;
+}
+
+@keyframes slideDown {
+   from {
+      transform: translateY(-150%);
+      opacity: 0;
+   }
+   to {
+      transform: translateY(0);
+      opacity: 1;
+   }
+}
+
+/* Smooth animations */
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+      transform: translateY(20px);
+   }
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+@keyframes slideInLeft {
+   from {
+      opacity: 0;
+      transform: translateX(-30px);
+   }
+   to {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+/* Hero section animations */
+.hero-section h1 {
+   animation: fadeIn 0.8s ease-out;
+}
+
+.hero-section p {
+   animation: fadeIn 1s ease-out 0.2s backwards;
+}
+
+.hero-section .badge {
+   animation: fadeIn 0.6s ease-out backwards;
+}
+
+.hero-section .badge:nth-child(1) {
+   animation-delay: 0.3s;
+}
+
+.hero-section .badge:nth-child(2) {
+   animation-delay: 0.4s;
+}
+
+/* Casino card hover effects */
+.casino-card {
+   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+   overflow: visible;
+   position: relative;
+}
+
+.casino-card:hover {
+   transform: translateY(-15px) scale(1.02);
+   box-shadow: 0 20px 50px rgba(102, 126, 234, 0.25) !important;
+}
+
+.casino-card img {
+   transition: all 0.4s ease-in-out;
+}
+
+.casino-card:hover img {
+   transform: scale(1.15) rotate(2deg);
+}
+
+.casino-card .btn {
+   transition: all 0.3s ease-in-out;
+   position: relative;
+   overflow: hidden;
+}
+
+.casino-card .btn::before {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 0;
+   height: 0;
+   border-radius: 50%;
+   background: rgba(255,255,255,0.3);
+   transform: translate(-50%, -50%);
+   transition: width 0.6s, height 0.6s;
+}
+
+.casino-card .btn:hover::before {
+   width: 300px;
+   height: 300px;
+}
+
+.casino-card:hover .btn {
+   transform: translateY(-2px);
+   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.casino-card .badge {
+   transition: all 0.3s ease-in-out;
+}
+
+.casino-card:hover .badge {
+   transform: scale(1.1);
+}
+
+.rank-badge {
+   z-index: 10;
+}
+
+.rank-badge .badge {
+   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+   animation: slideInLeft 0.6s ease-out;
+}
+
+/* Pulse animation for top casinos */
+@keyframes pulse {
+   0%, 100% {
+      box-shadow: 0 4px 12px rgba(255,215,0,0.4);
+   }
+   50% {
+      box-shadow: 0 4px 20px rgba(255,215,0,0.7);
+   }
+}
+
+.casino-card:hover .rank-badge .badge {
+   animation: pulse 2s infinite;
+}
+
+/* Why Choose Us section hover effects */
+.row.g-4 > div > .card {
+   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.row.g-4 > div > .card:hover {
+   transform: translateY(-10px) scale(1.02);
+   box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2) !important;
+}
+
+.row.g-4 > div > .card i {
+   transition: all 0.3s ease-in-out;
+}
+
+.row.g-4 > div > .card:hover i {
+   transform: scale(1.15) rotate(5deg);
+}
+
+/* News cards hover effects */
+section.bg-light article.card {
+   transition: all 0.3s ease-in-out;
+   cursor: pointer;
+}
+
+section.bg-light article.card:hover {
+   transform: translateY(-8px);
+   box-shadow: 0 12px 28px rgba(0,0,0,0.15) !important;
+}
+
+section.bg-light article.card img {
+   transition: transform 0.4s ease-in-out;
+}
+
+section.bg-light article.card:hover img {
+   transform: scale(1.05);
+}
+
+section.bg-light article.card h3 a {
+   transition: color 0.2s ease-in-out;
+}
+
+section.bg-light article.card:hover h3 a {
+   color: #667eea !important;
+}
+
+/* FAQ cards hover effects */
+section[aria-labelledby="faq-section"] .card {
+   transition: all 0.3s ease-in-out;
+}
+
+section[aria-labelledby="faq-section"] .card:hover {
+   transform: translateX(10px);
+   box-shadow: 0 8px 20px rgba(102, 126, 234, 0.15) !important;
+   border-left: 4px solid #667eea;
+}
+
+section[aria-labelledby="faq-section"] .badge {
+   transition: all 0.3s ease-in-out;
+}
+
+section[aria-labelledby="faq-section"] .card:hover .badge {
+   transform: scale(1.1);
+}
+
+/* Scroll fade-in animation */
+.fade-in-section {
+   opacity: 0;
+   transform: translateY(30px);
+   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+   opacity: 1;
+   transform: translateY(0);
+}
+
+/* Disable fade-in animation on mobile - show content immediately */
+@media (max-width: 768px) {
+   .fade-in-section {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+   }
+}
+
+/* Button hover effects */
+.btn {
+   transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+   transform: translateY(-2px);
+   box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* Smooth scrolling */
+html {
+   scroll-behavior: smooth;
+}
+
+/* Category badges for news */
+.category-badge {
+   display: inline-block;
+   padding: 0.35rem 0.8rem;
+   border-radius: 20px;
+   font-size: 0.75rem;
+   font-weight: 600;
+   text-transform: uppercase;
+   letter-spacing: 0.5px;
+   margin-bottom: 0.5rem;
+}
+
+.category-instant { background: #17a2b8; color: white; }
+.category-events { background: #20c997; color: white; }
+.category-industry { background: #fd7e14; color: white; }
+.category-guides { background: #28a745; color: white; }
+.category-partnership { background: #6f42c1; color: white; }
+.category-games { background: #007bff; color: white; }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+   .hero-section h1 {
+      font-size: 2rem !important;
+   }
+
+   .casino-card:hover {
+      transform: translateY(-5px);
+   }
+   
+   body {
+      overflow-x: hidden;
+   }
+   
+   main {
+      display: block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+   }
+   
+   .hero-section {
+      display: block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      padding: 1.5rem 0 !important;
+      margin-bottom: 2rem !important;
+   }
+   
+   .container {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+      width: 100% !important;
+      max-width: 100% !important;
+   }
+   
+   .row {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      display: flex !important;
+      flex-wrap: wrap !important;
+   }
+   
+   .col, .col-lg-4, .col-md-6, .col-lg-10 {
+      display: block !important;
+      visibility: visible !important;
+      width: 100% !important;
+      padding: 0 15px !important;
+   }
+   
+   .casino-card {
+      display: block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      margin-bottom: 1rem;
+   }
+   
+   .card {
+      display: block !important;
+      visibility: visible !important;
+   }
+   
+   .sticky-promo-banner {
+      top: 60px;
+      font-size: 0.85rem;
+   }
+   
+   section {
+      display: block !important;
+      visibility: visible !important;
+   }
+   
+   .display-2 {
+      font-size: 1.75rem !important;
+      line-height: 1.3 !important;
+   }
+   
+   .lead {
+      font-size: 1rem !important;
+   }
+   
+   .badge {
+      font-size: 0.75rem !important;
+      padding: 0.35rem 0.65rem !important;
+   }
+}
+
+/* Improve loading performance */
+* {
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
