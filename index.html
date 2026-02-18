@@ -69,15 +69,27 @@
    main{display:block;width:100%;min-height:calc(100vh - 200px)}
    .hero-section{display:block!important;visibility:visible!important;opacity:1!important}
    .casino-card{display:block!important;visibility:visible!important}
+   section{display:block!important;visibility:visible!important;opacity:1!important}
+   .card{display:block!important;visibility:visible!important;opacity:1!important}
    @media (max-width: 768px){
       .container{padding:0 15px!important;width:100%!important;max-width:100%!important}
       body{overflow-x:hidden}
       .row{margin-left:-15px;margin-right:-15px}
-      .hero-section{padding:2rem 0!important}
+      .hero-section{padding:2rem 0!important;opacity:1!important}
       .display-2{font-size:1.75rem!important}
-      section{display:block!important}
+      section{display:block!important;opacity:1!important}
+      .fade-in-section{opacity:1!important;transform:none!important}
+      main,section,.container,.row,.col,.card,.casino-card{opacity:1!important;visibility:visible!important}
    }
    </style>
+   
+   <!-- Noscript fallback for critical visibility -->
+   <noscript>
+      <style>
+         .fade-in-section{opacity:1!important;transform:none!important}
+         section,main,.container,.hero-section,.casino-card,.card{opacity:1!important;visibility:visible!important}
+      </style>
+   </noscript>
 
    <!-- Fonts & Styles -->
    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
@@ -1445,11 +1457,11 @@
 
 
    
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous" defer></script>
 
-   <script src="./main.js"></script>
+   <script src="./main.js" defer></script>
 
-   <script type="text/javascript" src="https://js.essential.partners/javascript.php?prefix=aJTkbc3ZJkPUOsjNOfgKeWNd7ZgqdRLk&amp;media=2&amp;campaign=1"></script>
+   <script type="text/javascript" src="https://js.essential.partners/javascript.php?prefix=aJTkbc3ZJkPUOsjNOfgKeWNd7ZgqdRLk&amp;media=2&amp;campaign=1" async></script>
    
    <!-- Custom CSS for Modern UI/UX -->
    <style>
@@ -1686,6 +1698,14 @@
          opacity: 1;
          transform: translateY(0);
       }
+      
+      /* Disable fade-in animation on mobile - show content immediately */
+      @media (max-width: 768px) {
+         .fade-in-section {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+         }
+      }
 
       /* Button hover effects */
       .btn {
@@ -1823,27 +1843,36 @@
       }
 
       document.addEventListener('DOMContentLoaded', function() {
+         // Check if mobile device
+         const isMobile = window.innerWidth <= 768;
+         
          // Add fade-in class to sections
          const sections = document.querySelectorAll('.container, .container-lg');
          sections.forEach(section => {
             section.classList.add('fade-in-section');
+            // On mobile, immediately show content
+            if (isMobile) {
+               section.classList.add('is-visible');
+            }
          });
 
-         // Intersection Observer for scroll animations
-         const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-               if (entry.isIntersecting) {
-                  entry.target.classList.add('is-visible');
-               }
+         // Intersection Observer for scroll animations (desktop only)
+         if (!isMobile) {
+            const observer = new IntersectionObserver((entries) => {
+               entries.forEach(entry => {
+                  if (entry.isIntersecting) {
+                     entry.target.classList.add('is-visible');
+                  }
+               });
+            }, {
+               threshold: 0.1,
+               rootMargin: '0px 0px -50px 0px'
             });
-         }, {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-         });
 
-         sections.forEach(section => {
-            observer.observe(section);
-         });
+            sections.forEach(section => {
+               observer.observe(section);
+            });
+         }
 
          // Smooth scroll to top on page load
          window.scrollTo({ top: 0, behavior: 'smooth' });
