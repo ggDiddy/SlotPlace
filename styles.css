@@ -1,4 +1,9 @@
 /* Base Styles */
+html {
+   scroll-behavior: smooth;
+   scroll-padding-top: 80px; /* Account for sticky navbar */
+}
+
 body {
    font-family: 'Poppins', sans-serif;
    scroll-behavior: smooth;
@@ -31,8 +36,8 @@ main {
    }
    
    .container, .container-lg {
-      padding-left: 15px !important;
-      padding-right: 15px !important;
+      padding-left: 8px !important;
+      padding-right: 8px !important;
       width: 100% !important;
       max-width: 100% !important;
    }
@@ -44,11 +49,34 @@ main {
       visibility: visible !important;
    }
    
+   /* Reduce vertical padding on mobile */
+   .py-5 {
+      padding-top: 1.5rem !important;
+      padding-bottom: 1.5rem !important;
+   }
+   
+   .p-5, .pt-5, .pb-5 {
+      padding: 1.5rem !important;
+   }
+   
+   .mt-5, .my-5 {
+      margin-top: 1.5rem !important;
+   }
+   
+   .mb-5, .my-5 {
+      margin-bottom: 1.5rem !important;
+   }
+   
    .row {
-      margin-left: 0 !important;
-      margin-right: 0 !important;
+      margin-left: -4px !important;
+      margin-right: -4px !important;
       display: flex !important;
       flex-wrap: wrap !important;
+   }
+   
+   .col, [class*="col-"] {
+      padding-left: 4px !important;
+      padding-right: 4px !important;
    }
    
    .hero-section, .casino-card, .card {
@@ -60,6 +88,116 @@ main {
    main {
       display: block !important;
       visibility: visible !important;
+   }
+   
+   /* Optimize hero sections */
+   .hero-section {
+      padding: 1.5rem 0 !important;
+   }
+   
+   /* Smaller headings on mobile */
+   h1, .h1 {
+      font-size: 1.75rem !important;
+   }
+   
+   h2, .h2 {
+      font-size: 1.5rem !important;
+   }
+   
+   .display-3, .display-4 {
+      font-size: 2rem !important;
+   }
+   
+   .lead {
+      font-size: 1rem !important;
+   }
+   
+   /* Reduce badge and gap sizes */
+   .badge {
+      font-size: 0.7rem !important;
+      padding: 0.25rem 0.5rem !important;
+   }
+   
+   .gap-2, .gap-3 {
+      gap: 0.5rem !important;
+   }
+   
+   /* Optimize buttons spacing */
+   .btn {
+      margin-bottom: 0.5rem;
+   }
+   
+   /* Sticky promo banner mobile optimization */
+   .sticky-promo-banner {
+      padding: 0.5rem 0 !important;
+   }
+   
+   .sticky-promo-banner .badge {
+      font-size: 0.65rem !important;
+      padding: 0.2rem 0.4rem !important;
+   }
+   
+   .sticky-promo-banner strong,
+   .sticky-promo-banner .text-white {
+      font-size: 0.85rem !important;
+   }
+   
+   .sticky-promo-banner img {
+      height: 30px !important;
+   }
+   
+   .sticky-promo-banner .btn {
+      font-size: 0.75rem !important;
+      padding: 0.4rem 0.8rem !important;
+   }
+   
+   /* Optimize flex gaps */
+   .d-flex.gap-3 {
+      gap: 0.5rem !important;
+   }
+   
+   .d-flex.gap-2 {
+      gap: 0.35rem !important;
+   }
+   
+   /* Optimize card body padding */
+   .card-body {
+      padding: 0.75rem !important;
+   }
+   
+   /* Prevent text overflow */
+   h1, h2, h3, h4, h5, h6,
+   .h1, .h2, .h3, .h4, .h5, .h6 {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+   }
+   
+   p, .lead, strong {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+   }
+   
+   /* Optimize table responsiveness */
+   .table-responsive {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+   }
+   
+   /* Optimize images */
+   img {
+      max-width: 100%;
+      height: auto;
+   }
+   
+   /* Reduce spacing utilities */
+   .px-4, .px-5 {
+      padding-left: 0.5rem !important;
+      padding-right: 0.5rem !important;
+   }
+   
+   .mx-4, .mx-5 {
+      margin-left: 0.5rem !important;
+      margin-right: 0.5rem !important;
    }
 }
 
@@ -184,6 +322,42 @@ main {
     transform: translateY(-2px);
 }
 /* papildinajums start */
+
+/* Why Choose SlotPlace Section Styles */
+#why-choose-heading + .lead strong {
+   color: #667eea;
+}
+
+section[aria-labelledby="why-choose-heading"] .card {
+   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+section[aria-labelledby="why-choose-heading"] .card:hover {
+   transform: translateY(-10px);
+   box-shadow: 0 15px 35px rgba(102, 126, 234, 0.2), 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+section[aria-labelledby="why-choose-heading"] .card:hover .card-body > div {
+   transform: scale(1.1) rotate(5deg);
+}
+
+section[aria-labelledby="why-choose-heading"] .card-body > div {
+   transition: all 0.3s ease;
+}
+
+section[aria-labelledby="why-choose-heading"] .card strong {
+   color: #667eea;
+   font-weight: 600;
+}
+
+@media (max-width: 991px) {
+   section[aria-labelledby="why-choose-heading"] .col-lg-4:last-child {
+      max-width: 100%;
+   }
+}
+
+/* papildinajums end */
+
 .casino-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -249,30 +423,52 @@ main {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .casino-card {
-        padding: 15px;
+        padding: 10px;
+        margin-bottom: 12px;
     }
 
     .custom-casino-square {
-        width: 80px; /* Smaller image on mobile */
+        width: 70px; /* Smaller image on mobile */
     }
 
     .btn {
-        font-size: 14px; /* Smaller buttons on mobile */
+        font-size: 13px; /* Smaller buttons on mobile */
+        padding: 6px 12px;
+    }
+    
+    .card {
+        margin-bottom: 12px;
+    }
+    
+    /* Casino card text optimization */
+    .casino-card h6,
+    .casino-card .h6 {
+        font-size: 0.9rem !important;
+        margin-bottom: 0.25rem !important;
+    }
+    
+    .casino-card p {
+        font-size: 0.85rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .casino-card .text-warning {
+        font-size: 1.1rem !important;
     }
 }
 
 @media (max-width: 576px) {
     .custom-casino-square {
-        width: 70px; /* Even smaller image for extra small screens */
+        width: 60px; /* Even smaller image for extra small screens */
     }
 
     .btn {
         font-size: 12px; /* Smaller buttons on very small screens */
-        padding: 8px 15px;
+        padding: 6px 10px;
     }
 
     .casino-card {
-        padding: 10px;
+        padding: 8px;
     }
 }
 
@@ -465,32 +661,68 @@ img {
 
 /* Enhanced Navigation Styles */
 .navbar {
-   transition: all 0.3s ease;
+   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(10px);
+   -webkit-backdrop-filter: blur(10px);
 }
 
 .navbar.scrolled {
    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+   backdrop-filter: blur(15px);
+   -webkit-backdrop-filter: blur(15px);
 }
 
 .navbar-brand {
-   transition: transform 0.3s ease;
+   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+   display: flex;
+   align-items: center;
+   gap: 0.75rem;
 }
 
 .navbar-brand:hover {
    transform: scale(1.05);
+   filter: drop-shadow(0 4px 8px rgba(255, 255, 255, 0.3));
 }
 
 .navbar-brand img {
    transition: all 0.3s ease;
+   will-change: transform;
+}
+
+.navbar-brand span {
+   font-weight: 700;
+   background: linear-gradient(135deg, #fff 0%, #ffd700 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   letter-spacing: 1px;
+   font-size: 1.25rem;
+   transition: all 0.3s ease;
+}
+
+.navbar-brand:hover span {
+   letter-spacing: 1.5px;
 }
 
 .nav-link {
    position: relative;
    font-weight: 500;
    color: #fff !important;
-   transition: all 0.3s ease;
+   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
    padding: 0.5rem 1rem !important;
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+}
+
+.nav-link i {
+   font-size: 1.1rem;
+   transition: all 0.3s ease;
+}
+
+.nav-link:hover i {
+   transform: scale(1.2) rotate(5deg);
 }
 
 .nav-link::before {
@@ -500,7 +732,7 @@ img {
    left: 50%;
    width: 0;
    height: 2px;
-   background: #fff;
+   background: linear-gradient(90deg, transparent, #ffd700, transparent);
    transition: all 0.3s ease;
    transform: translateX(-50%);
 }
@@ -508,6 +740,7 @@ img {
 .nav-link:hover {
    color: #fff !important;
    transform: translateY(-2px);
+   background: rgba(255, 255, 255, 0.1);
 }
 
 .nav-link:hover::before {
@@ -516,20 +749,69 @@ img {
 
 .nav-link.active {
    font-weight: 600;
+   background: rgba(255, 255, 255, 0.15);
 }
 
 .nav-link.active::before {
    width: 80%;
-   background: #ffd700;
+   background: linear-gradient(90deg, transparent, #ffd700, transparent);
+}
+
+/* CTA Button Styling */
+.navbar .btn-light {
+   background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+   border: none;
+   font-weight: 600;
+   padding: 0.5rem 1.25rem;
+   border-radius: 50px;
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+   color: #ff6f61;
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+}
+
+.navbar .btn-light:hover {
+   transform: translateY(-3px) scale(1.05);
+   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+   background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+   color: #333;
+}
+
+.navbar .btn-light:active {
+   transform: translateY(-1px) scale(1.02);
+}
+
+.navbar .btn-light i {
+   font-size: 1.2rem;
+   transition: all 0.3s ease;
+}
+
+.navbar .btn-light:hover i {
+   animation: trophy-bounce 0.6s ease infinite;
+}
+
+@keyframes trophy-bounce {
+   0%, 100% {
+      transform: translateY(0);
+   }
+   50% {
+      transform: translateY(-3px);
+   }
 }
 
 .navbar-toggler {
    border: none !important;
    transition: all 0.3s ease;
+   padding: 0.5rem;
+   background: rgba(255, 255, 255, 0.1);
+   border-radius: 8px;
 }
 
 .navbar-toggler:hover {
-   transform: scale(1.05);
+   transform: scale(1.1) rotate(90deg);
+   background: rgba(255, 255, 255, 0.2);
 }
 
 .navbar-toggler:focus,
@@ -540,32 +822,84 @@ img {
    border: none !important;
 }
 
+.navbar-toggler-icon {
+   transition: all 0.3s ease;
+}
+
 .navbar-nav {
    gap: 0.5rem;
+   align-items: center;
 }
 
 @media (max-width: 991.98px) {
    .navbar-collapse {
       background: rgba(255, 111, 97, 0.98);
-      padding: 1rem;
-      margin-top: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      padding: 0.75rem;
+      margin-top: 0.5rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      animation: slideDown 0.3s ease;
+   }
+   
+   @keyframes slideDown {
+      from {
+         opacity: 0;
+         transform: translateY(-20px);
+      }
+      to {
+         opacity: 1;
+         transform: translateY(0);
+      }
    }
    
    .nav-link {
-      padding: 0.75rem 1rem !important;
-      border-radius: 5px;
-      margin-bottom: 0.25rem;
+      padding: 0.5rem 0.75rem !important;
+      border-radius: 8px;
+      margin-bottom: 0.2rem;
+      font-size: 0.9rem;
+   }
+   
+   .nav-link i {
+      font-size: 1rem;
    }
    
    .nav-link:hover {
-      background: rgba(255, 255, 255, 0.1);
-      transform: translateX(5px);
+      background: rgba(255, 255, 255, 0.2);
+      transform: translateX(10px);
    }
    
    .nav-link::before {
       display: none;
+   }
+   
+   .navbar .btn-light {
+      width: 100%;
+      justify-content: center;
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem !important;
+      font-size: 0.9rem;
+   }
+   
+   .navbar-brand span {
+      font-size: 1rem;
+   }
+   
+   /* Optimize logo size for mobile */
+   .navbar-brand img {
+      height: 40px !important;
+      transform: scale(1.5) !important;
+   }
+   
+   /* Reduce navbar padding on mobile */
+   .navbar {
+      padding: 0.5rem 0 !important;
+   }
+   
+   .navbar .container {
+      padding-left: 8px !important;
+      padding-right: 8px !important;
    }
 }
 

@@ -235,31 +235,48 @@
 
   gtag('config', 'G-BWXGZQ897S');
 </script>
-   <nav class="navbar navbar-expand-lg sticky-top custom-color">
-      <div class="container px-5">
-        <a class="navbar-brand" href="index.html" aria-label="SlotPlace Home">
-         <!-- TODO: Convert to WebP - Current: PNG 97.5 KiB, Est savings: 74 KiB -->
-         <img src="./assets//slot-place-logo.webp" alt="slot place logo" style="width: 20%; transform: scale(2);" >
+   <nav class="navbar navbar-expand-lg sticky-top custom-color shadow-sm" style="backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html" aria-label="SlotPlace Home" style="transition: all 0.3s ease;">
+         <img src="./assets/slot-place-logo.webp" alt="SlotPlace Logo - Best Online Casinos" style="height: 55px; width: auto; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));transform: scale(2); " loading="eager">
+         <span class="ms-2 fw-bold text-white d-none d-md-inline" style="font-size: 1.1rem; letter-spacing: 0.5px;">SlotPlace</span>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border: none !important; box-shadow: none !important;">
-          <span class="navbar-toggler-icon"></span>
+        
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="filter: brightness(0) invert(1);"></span>
         </button>
+        
         <div class="collapse navbar-collapse" id="navbarNav">
-         <ul class="navbar-nav ms-auto text-nowrap">
+         <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active px-3 py-2 rounded-pill" aria-current="page" href="index.html">
+                <i class="bi bi-house-fill me-1"></i>Home
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="reviews.html">Reviews</a>
+              <a class="nav-link px-3 py-2 rounded-pill" href="reviews.html">
+                <i class="bi bi-star-fill me-1"></i>Reviews
+              </a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="news.html">News</a>
+               <a class="nav-link px-3 py-2 rounded-pill" href="news.html">
+                <i class="bi bi-newspaper me-1"></i>News
+               </a>
              </li>
              <li class="nav-item">
-               <a class="nav-link" href="faq.html">FAQ</a>
+               <a class="nav-link px-3 py-2 rounded-pill" href="faq.html">
+                <i class="bi bi-question-circle-fill me-1"></i>FAQ
+               </a>
              </li>
              <li class="nav-item">
-               <a class="nav-link" href="aboutus.html">Contact Us</a>
+               <a class="nav-link px-3 py-2 rounded-pill" href="aboutus.html">
+                <i class="bi bi-envelope-fill me-1"></i>Contact
+               </a>
+             </li>
+             <li class="nav-item ms-lg-2">
+               <a class="btn btn-light btn-sm px-4 py-2 rounded-pill fw-semibold" href="#top-casinos" style="box-shadow: 0 4px 12px rgba(255,255,255,0.3); transition: all 0.3s ease;">
+                <i class="bi bi-trophy-fill me-1 text-warning"></i>Top Casinos
+               </a>
              </li>
           </ul>
         </div>
@@ -306,12 +323,11 @@
 <section class="container" aria-labelledby="hero-section">
 
     <!-- Modern Hero Section -->
-    <section class="hero-section py-5" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; margin-bottom: 3rem; position: relative; overflow: hidden;">
-      <!-- Decorative elements -->
-      <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: rgba(255,255,255,0.1); border-radius: 50%; filter: blur(60px);"></div>
-      <div style="position: absolute; bottom: -30px; left: -30px; width: 150px; height: 150px; background: rgba(255,255,255,0.1); border-radius: 50%; filter: blur(40px);"></div>
+    <section class="hero-section py-2" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; margin-bottom: 3rem; position: relative; overflow: hidden;">
+      <!-- Background pattern overlay -->
+      <div class="position-absolute w-100 h-100" style="opacity: 0.1; background: url('./assets/bg-slotplace-hero.webp') center/cover;"></div>
       
-      <div class="container">
+      <div class="container position-relative" style="z-index: 1;">
          <div class="row text-center text-white align-items-center justify-content-center py-5">
             <div class="col-lg-10">
                <!-- Top Badges -->
@@ -334,7 +350,7 @@
 
                <!-- Description -->
                <p class="lead fs-4 mb-4 px-lg-5" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.3); line-height: 1.6;">
-                  Discover the best online casinos with amazing bonuses up to <strong>$750</strong>, <strong>200+ free spins</strong>, and top slot games. Expert reviews, trusted sites, and safe gambling. Bet smart and win big!
+                  Discover the best online casinos with amazing bonuses up to <strong>$20,000</strong>, <strong>+200 free spins</strong>, and top slot games. Expert reviews, trusted sites, and safe gambling. Bet smart and win big!
                </p>
 
                <!-- Feature Badges -->
@@ -401,7 +417,7 @@
 
 <!-- card -->
 <!-- Top Casino Cards with Ranking -->
-<div class="container">
+<div class="container" id="top-casinos">
 <div class="row mt-5">
    <div class="col text-center">
     <h2 class="h2 fw-bold mb-3" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
@@ -1135,46 +1151,57 @@
 </div>
 
 </section>
-    <!-- WIN MORE WITH US -->
-    <section class="container p-5" aria-labelledby="why-choose-us">
-      <div class="row text-center">
-         <div class="col py-3 my-5">
-            <h2 id="why-choose-us" class="py-3 fw-bold text-dark">Why Choose SlotPlace for Your Casino Journey</h3>
-            <p class="text-white text-bg-dark">We provide expert guidance at every level. From beginners to professionals, our reviews and strategies help you make informed decisions and maximize your online casino experience.</p>
+    
+    <!-- Why Choose SlotPlace Section -->
+    <section class="container py-5 my-4" aria-labelledby="why-choose-heading">
+      <div class="row text-center mb-5">
+         <div class="col-lg-8 mx-auto">
+            <h2 id="why-choose-heading" class="display-5 fw-bold mb-3" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">
+               <i class="bi bi-speedometer2 me-2" style="color: #667eea; -webkit-text-fill-color: #667eea; background: none;" aria-hidden="true"></i> Why Choose SlotPlace?
+            </h2>
+            <p class="lead text-muted">Your trusted partner for finding the <strong>best online casinos</strong>. We provide expert guidance to help you make informed decisions and maximize your gaming experience.</p>
          </div>
       </div>
 
-      <div class="row g-4">
-         <div class="col-md-4">
-            <div class="card border-0 h-100">
-               <div class="card-body shadow-sm">
-                  <i class="bi bi-shield-check h1 text-info" aria-hidden="true"></i>
-                   <h3 class="fw-bold py-2 text-dark">Safety & Security</h3>
-                   <p class="lead text-muted">
-                     Your safety is our top priority. We only recommend licensed and regulated casinos with SSL encryption, verified payment methods, and proven fair gaming. Every casino we feature undergoes rigorous security checks to ensure your data and funds are protected.
-                   </p>
+      <div class="row g-4" itemscope itemtype="https://schema.org/ItemList">
+         <div class="col-lg-4 col-md-6" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service">
+            <div class="card border-0 h-100 shadow-sm" style="transition: all 0.3s ease; border-radius: 12px; overflow: hidden;">
+               <div class="card-body text-center p-4" style="background: linear-gradient(to bottom, #f8f9fa 0%, #ffffff 100%);">
+                  <div class="mb-4" style="background: linear-gradient(135deg, #17a2b8 0%, #138496 100%); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 4px 15px rgba(23,162,184,0.3);">
+                     <i class="bi bi-shield-check" style="font-size: 2.5rem; color: white;" aria-hidden="true"></i>
+                  </div>
+                  <h3 class="h4 fw-bold mb-3 text-dark" itemprop="name">Safety & Security First</h3>
+                  <p class="text-muted mb-0" itemprop="description">
+                     Your safety is our top priority. We only recommend <strong>licensed and regulated casinos</strong> with SSL encryption, verified payment methods, and proven fair gaming. Every casino undergoes <strong>rigorous security audits</strong> to ensure your data and funds are protected 24/7.
+                  </p>
                </div>
             </div>
          </div>
-         <div class="col-md-4">
-            <div class="card border-0 h-100">
-               <div class="card-body shadow-sm">
-                  <i class="bi bi-gift-fill h1 text-success" aria-hidden="true"></i>
-                   <h3 class="fw-bold py-2 text-dark">Exclusive Bonuses</h3>
-                   <p class="lead text-muted">
-                     Access exclusive bonus offers you won't find anywhere else. We negotiate special deals with top casinos to give you better welcome bonuses, more free spins, and higher deposit matches. Our bonus reviews help you understand wagering requirements and maximize your value.
-                   </p>
+         
+         <div class="col-lg-4 col-md-6" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service">
+            <div class="card border-0 h-100 shadow-sm" style="transition: all 0.3s ease; border-radius: 12px; overflow: hidden;">
+               <div class="card-body text-center p-4" style="background: linear-gradient(to bottom, #f8f9fa 0%, #ffffff 100%);">
+                  <div class="mb-4" style="background: linear-gradient(135deg, #28a745 0%, #218838 100%); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 4px 15px rgba(40,167,69,0.3);">
+                     <i class="bi bi-gift-fill" style="font-size: 2.5rem; color: white;" aria-hidden="true"></i>
+                  </div>
+                  <h3 class="h4 fw-bold mb-3 text-dark" itemprop="name">Exclusive Bonus Deals</h3>
+                  <p class="text-muted mb-0" itemprop="description">
+                     Access <strong>exclusive bonus offers</strong> you won't find anywhere else. We negotiate special deals with top casinos to give you <strong>better welcome bonuses</strong>, more free spins, and higher deposit matches. Clear wagering requirement explanations help you maximize your value.
+                  </p>
                </div>
             </div>   
          </div>
-         <div class="col-md-4">
-            <div class="card border-0 h-100">
-               <div class="card-body shadow-sm">
-                  <i class="bi bi-star-fill h1 text-warning" aria-hidden="true"></i>
-                   <h3 class="fw-bold py-2 text-dark    ">Expert Reviews</h3>
-                   <p class="lead text-muted">
-                     Our team of casino experts thoroughly tests each site for game variety, user experience, customer support, withdrawal speed, and mobile compatibility. We provide honest, unbiased reviews based on real-world testing to help you choose the perfect casino.
-                   </p>
+         
+         <div class="col-lg-4 col-md-6 mx-auto" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service">
+            <div class="card border-0 h-100 shadow-sm" style="transition: all 0.3s ease; border-radius: 12px; overflow: hidden;">
+               <div class="card-body text-center p-4" style="background: linear-gradient(to bottom, #f8f9fa 0%, #ffffff 100%);">
+                  <div class="mb-4" style="background: linear-gradient(135deg, #ffc107 0%, #ff9800 100%); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 4px 15px rgba(255,193,7,0.3);">
+                     <i class="bi bi-star-fill" style="font-size: 2.5rem; color: white;" aria-hidden="true"></i>
+                  </div>
+                  <h3 class="h4 fw-bold mb-3 text-dark" itemprop="name">Expert Casino Reviews</h3>
+                  <p class="text-muted mb-0" itemprop="description">
+                     Our team of casino experts thoroughly tests each site for <strong>game variety</strong>, user experience, customer support, <strong>withdrawal speed</strong>, and mobile compatibility. Get honest, unbiased reviews based on <strong>real-world testing</strong> to choose the perfect casino.
+                  </p>
                </div>
             </div>
          </div>
@@ -1194,6 +1221,19 @@
 
 
       <div class="row py-5 g-4">
+
+        <div class="col-md-4">
+             <article class="card shadow border-0 h-100 ">
+                <img src="./assets/Playtech_bigbadwolf.webp" class="card-img-top" alt="GambleAware responsible gambling vision" loading="lazy" width="400" height="300">
+                <div class="card-body">
+                  <span class="category-badge category-games">🎪 Games</span>
+                  <time class="text-muted d-block" datetime="2026-02-10"><i class="bi bi-calendar" aria-hidden="true"></i> 17 February 2026</time>
+                  <h3 class="h4 mt-2"><a class="text-black text-decoration-none" href="news.html">Playtech's Brand New 2026 Releases: The Hottest Slots Launching Now</a></h3>
+                  <p class="text-muted">From multiplayer functionality to mobile - optimized mechanics, from augmented reality live games to enhanced Cash Collect systems, these <a href="https://vgso.naralvin.com/?mid=241423_1671486" target="_blank">hot slots</a> set new standards...</p>
+                </div>
+              </article>
+        </div>
+
 
         <div class="col-md-4">
              <article class="card shadow border-0 h-100 ">
@@ -1227,7 +1267,7 @@
                   <p class="text-muted">Are you ready to level up your <a href="https://affpapaconf.com/madrid-2026/">affiliate marketing game?</a></p>
                 </div>
               </article>
-          </div>
+        </div>
 
 
         <div class="col-md-4">
@@ -1468,11 +1508,11 @@
       /* Sticky Promotional Banner */
       .sticky-promo-banner {
          position: fixed;
-         top: 100px;
+         top: 0;
          left: 0;
          right: 0;
          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
          z-index: 1019;
          transform: translateY(-150%);
          transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -1739,6 +1779,7 @@
       .category-industry { background: #fd7e14; color: white; }
       .category-guides { background: #28a745; color: white; }
       .category-partnership { background: #6f42c1; color: white; }
+      .category-games { background: #007bff; color: white; }
 
       /* Responsive adjustments */
       @media (max-width: 768px) {
@@ -1846,6 +1887,25 @@
          // Check if mobile device
          const isMobile = window.innerWidth <= 768;
          
+         // Set sticky banner position dynamically based on navbar height
+         const navbar = document.querySelector('.navbar');
+         const stickyBanner = document.getElementById('stickyPromoBanner');
+         
+         function updateBannerPosition() {
+            const navbarHeight = navbar.offsetHeight;
+            stickyBanner.style.top = navbarHeight + 'px';
+         }
+         
+         // Set initial position
+         updateBannerPosition();
+         
+         // Update on window resize
+         let resizeTimer;
+         window.addEventListener('resize', function() {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(updateBannerPosition, 100);
+         });
+         
          // Add fade-in class to sections
          const sections = document.querySelectorAll('.container, .container-lg');
          sections.forEach(section => {
@@ -1878,13 +1938,13 @@
          window.scrollTo({ top: 0, behavior: 'smooth' });
 
          // Enhanced navbar scroll effect
-         const navbar = document.querySelector('.navbar');
-         const stickyBanner = document.getElementById('stickyPromoBanner');
          let lastScrollTop = 0;
-         let bannerClosed = sessionStorage.getItem('promoBannerClosed') === 'true';
          
          window.addEventListener('scroll', function() {
             let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // Check banner closed status on every scroll (to catch real-time changes)
+            const bannerClosed = sessionStorage.getItem('promoBannerClosed') === 'true';
             
             // Add shadow when scrolled
             if (scrollTop > 50) {
@@ -1894,9 +1954,10 @@
             }
 
             // Show sticky banner after scrolling past hero section (around 300px)
+            // Only show if not closed by user
             if (scrollTop > 300 && !bannerClosed) {
                stickyBanner.classList.add('show');
-            } else if (scrollTop <= 300) {
+            } else if (scrollTop <= 300 || bannerClosed) {
                stickyBanner.classList.remove('show');
             }
             
@@ -1914,6 +1975,32 @@
             } else {
                link.classList.remove('active');
             }
+         });
+
+         // Smooth scroll for CTA button and anchor links
+         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+               const targetId = this.getAttribute('href');
+               if (targetId.length > 1) {
+                  e.preventDefault();
+                  const targetElement = document.querySelector(targetId);
+                  if (targetElement) {
+                     const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                     const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight - 20;
+                     
+                     window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                     });
+
+                     // Close mobile menu if open
+                     const navbarCollapse = document.querySelector('.navbar-collapse');
+                     if (navbarCollapse.classList.contains('show')) {
+                        navbarCollapse.classList.remove('show');
+                     }
+                  }
+               }
+            });
          });
       });
    </script>
