@@ -255,6 +255,7 @@ html {
    scroll-behavior: smooth;
 }
 
+
 /* Category badges for news */
 .category-badge {
    display: inline-block;
@@ -273,6 +274,8 @@ html {
 .category-guides { background: #28a745; color: white; }
 .category-partnership { background: #6f42c1; color: white; }
 .category-games { background: #007bff; color: white; }
+.category-bonus-games { background: #ec3818; color: white; }
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
