@@ -11,6 +11,7 @@
    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
    <link rel="dns-prefetch" href="https://www.google-analytics.com">
    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+   <link rel="dns-prefetch" href="https://js.essential.partners">
    
    <!-- Primary Meta Tags -->
    <title>Top Online Casinos 2026 | Best Casino Bonuses & Free Spins | SlotPlace</title>
@@ -56,16 +57,16 @@
 
    <!-- Critical CSS - Inline for faster initial render -->
    <style>
-   body{font-family:'Poppins',sans-serif;margin:0;padding:0;background:#f8f9fa;min-height:100vh}
+   body{font-family:'Poppins',sans-serif;margin:0;padding:0;background:#f8f9fa;min-height:100vh;contain-intrinsic-size:auto 100vh}
    .custom-color{background:linear-gradient(to right,#ff9966,#ff5e62)}
-   .navbar{padding:.5rem 1rem}
+   .navbar{padding:.5rem 1rem;contain:layout style paint}
    .container{max-width:1140px;margin:0 auto;padding:0 15px}
    img{max-width:100%;height:auto}
    main{display:block;width:100%;min-height:calc(100vh - 200px)}
-   .hero-section{display:block!important;visibility:visible!important;opacity:1!important}
-   .casino-card{display:block!important;visibility:visible!important}
-   section{display:block!important;visibility:visible!important;opacity:1!important}
-   .card{display:block!important;visibility:visible!important;opacity:1!important}
+   .hero-section{display:block!important;visibility:visible!important;opacity:1!important;content-visibility:auto}
+   .casino-card{display:block!important;visibility:visible!important;content-visibility:auto;contain-intrinsic-size:auto 400px}
+   section{display:block!important;visibility:visible!important;opacity:1!important;content-visibility:auto}
+   .card{display:block!important;visibility:visible!important;opacity:1!important;content-visibility:auto;contain-intrinsic-size:auto 300px}
    @media (max-width: 768px){
       .container{padding:0 15px!important;width:100%!important;max-width:100%!important}
       body{overflow-x:hidden}
@@ -91,14 +92,18 @@
    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" as="style">
    
    <!-- Preload critical images for LCP optimization -->
+   <link rel="preload" href="./assets/slot-place-logo.webp" as="image" type="image/webp" fetchpriority="high">
    <link rel="preload" href="./assets/logo-vegasino.webp" as="image" type="image/webp">
    <link rel="preload" href="./assets/BC-Game-Logo.webp" as="image" type="image/webp">
    
-   <!-- Fonts & Styles with optimized loading -->
-   <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-   <noscript><link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"></noscript>
+   <!-- Preload critical fonts -->
+   <link rel="preload" href="https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2" as="font" type="font/woff2" crossorigin>
    
-   <!-- Bootstrap CSS - Critical, load immediately -->
+   <!-- Fonts & Styles with optimized loading - use font-display:optional for better performance -->
+   <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&family=Poppins:wght@300;400;500&display=optional" rel="stylesheet" media="print" onload="this.media='all'">
+   <noscript><link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&family=Poppins:wght@300;400;500&display=optional" rel="stylesheet"></noscript>
+   
+   <!-- Bootstrap CSS - Critical, load immediately with cache hint -->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
    
    <!-- Bootstrap Icons - Non-critical, load asynchronously -->
@@ -243,7 +248,7 @@
    <nav class="navbar navbar-expand-lg sticky-top custom-color shadow-sm" style="backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="index.html" aria-label="SlotPlace Home" style="transition: all 0.3s ease;">
-         <img src="./assets/slot-place-logo.webp" alt="SlotPlace Logo - Best Online Casinos" style="height: 55px; width: auto; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));transform: scale(2); " loading="eager">
+         <img src="./assets/slot-place-logo.webp" alt="SlotPlace Logo - Best Online Casinos" width="110" height="55" style="height: 55px; width: auto; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));transform: scale(2); " fetchpriority="high">
          <span class="ms-2 fw-bold text-white d-none d-md-inline" style="font-size: 1.1rem; letter-spacing: 0.5px;">SlotPlace</span>
         </a>
         
@@ -294,7 +299,7 @@
         <div class="row align-items-center py-2">
           <div class="col-lg-10 col-md-9 col-10">
             <div class="d-flex align-items-center flex-wrap gap-3">
-              <img src="./assets/zinkra-casino.webp" alt="Zinkra Casino" style="height: 40px; object-fit: contain;" onerror="this.style.display='none'">
+              <img src="./assets/zinkra-casino.webp" alt="Zinkra Casino" width="120" height="40" style="height: 40px; object-fit: contain;" loading="lazy" onerror="this.style.display='none'">
               <div class="d-flex align-items-center gap-2 flex-wrap">
                 <span class="badge bg-warning text-dark px-3 py-2">
                   <i class="bi bi-fire"></i> Hot Offer
@@ -614,7 +619,7 @@
             </div>
             
             <div class="card-body text-center p-4">
-                <img src="./assets/Mega-Medusa-Casino-Logo.webp" class="mb-3 bg-dark p-2" loading="lazy" alt="Mega Medusa Casino" style="width: 80px; height: 80px; object-fit: contain; border-radius: 10px;">
+                <img src="./assets/Mega-Medusa-Casino-Logo.webp" class="mb-3 bg-dark p-2" loading="lazy" alt="Mega Medusa Casino" width="80" height="80" style="width: 80px; height: 80px; object-fit: contain; border-radius: 10px;">
                 
                 <h3 class="h5 fw-bold mb-2">Mega Medusa</h3>
                 
@@ -668,7 +673,7 @@
             </div>
             
             <div class="card-body text-center p-4">
-                <img src="./assets/playoyo-logo.png" class="mb-3" loading="lazy" alt="PlayOJO casino" style="width: 80px; height: 80px; object-fit: contain;">
+                <img src="./assets/playoyo-logo.png" class="mb-3" loading="lazy" alt="PlayOJO casino" width="80" height="80" style="width: 80px; height: 80px; object-fit: contain;">
                 
                 <h3 class="h5 fw-bold mb-2">PlayOJO</h3>
                 
@@ -722,7 +727,7 @@
             </div>
             
             <div class="card-body text-center p-4">
-                <img src="./assets/legiano.webp" class="mb-3" loading="lazy" alt="Legiano" style="width: 80px; height: 80px; object-fit: contain;">
+                <img src="./assets/legiano.webp" class="mb-3" loading="lazy" alt="Legiano" width="80" height="80" style="width: 80px; height: 80px; object-fit: contain;">
                 
                 <h3 class="h5 fw-bold mb-2">Legiano</h3>
                 
@@ -776,7 +781,7 @@
             </div>
             
             <div class="card-body text-center p-4">
-                <img src="./assets/Froggybet-logo.webp" class="mb-3" loading="lazy" alt="FroggyBet" style="width: 80px; height: 80px; object-fit: contain;">
+                <img src="./assets/Froggybet-logo.webp" class="mb-3" loading="lazy" alt="FroggyBet" width="80" height="80" style="width: 80px; height: 80px; object-fit: contain;">
                 
                 <h3 class="h5 fw-bold mb-2">FroggyBet</h3>
                 
@@ -831,7 +836,7 @@
             </div>
             
             <div class="card-body text-center p-4">
-                <img src="./assets/casino_brango.png" class="mb-3" loading="lazy" alt="Casino Brango" style="width: 80px; height: 80px; object-fit: contain;">
+                <img src="./assets/casino_brango.png" class="mb-3" loading="lazy" alt="Casino Brango" width="80" height="80" style="width: 80px; height: 80px; object-fit: contain;">
                 
                 <h3 class="h5 fw-bold mb-2">Casino Brango</h3>
                 
@@ -889,7 +894,7 @@
             </div>
             
             <div class="card-body text-center p-4">
-                <img src="./assets/playoyo-logo.png" class="mb-3" loading="lazy" alt="PlayOJO casino" style="width: 80px; height: 80px; object-fit: contain;">
+                <img src="./assets/playoyo-logo.png" class="mb-3" loading="lazy" alt="PlayOJO casino" width="80" height="80" style="width: 80px; height: 80px; object-fit: contain;">
                 
                 <h3 class="h5 fw-bold mb-2">PlayOJO</h3>
                 
@@ -944,7 +949,7 @@
             </div>
             
             <div class="card-body text-center p-4">
-                <img src="./assets/primeBetz-logo.png" class="mb-3" loading="lazy" alt="PrimeBetz Casino" style="width: 80px; height: 80px; object-fit: contain;">
+                <img src="./assets/primeBetz-logo.png" class="mb-3" loading="lazy" alt="PrimeBetz Casino" width="80" height="80" style="width: 80px; height: 80px; object-fit: contain;">
                 
                 <h3 class="h5 fw-bold mb-2">PrimeBetz</h3>
                 
@@ -997,7 +1002,7 @@
             </div>
             
             <div class="card-body text-center p-4">
-                <img src="./assets/zinkra-casino.webp" class="mb-3" loading="lazy" alt="Zinkra" style="width: 80px; height: 80px; object-fit: contain;">
+                <img src="./assets/zinkra-casino.webp" class="mb-3" loading="lazy" alt="Zinkra" width="80" height="80" style="width: 80px; height: 80px; object-fit: contain;">
                 
                 <h3 class="h5 fw-bold mb-2">Zinkra</h3>
                 
@@ -1050,7 +1055,7 @@
             </div>
             
             <div class="card-body text-center p-4">
-                <img src="./assets/Swanky_Bingo.webp" class="mb-3" loading="lazy" alt="Swanky Bingo" style="width: 80px; height: 80px; object-fit: contain;">
+                <img src="./assets/Swanky_Bingo.webp" class="mb-3" loading="lazy" alt="Swanky Bingo" width="80" height="80" style="width: 80px; height: 80px; object-fit: contain;">
                 
                 <h3 class="h5 fw-bold mb-2">Swanky Bingo</h3>
                 
@@ -1105,7 +1110,7 @@
             </div>
             
             <div class="card-body text-center p-4">
-                <img src="./assets/touch-casino.webp" class="mb-3" loading="lazy" alt="Touch Casino" style="width: 80px; height: 80px; object-fit: contain;">
+                <img src="./assets/touch-casino.webp" class="mb-3" loading="lazy" alt="Touch Casino" width="80" height="80" style="width: 80px; height: 80px; object-fit: contain;">
                 
                 <h3 class="h5 fw-bold mb-2">Touch Casino</h3>
                 
@@ -1475,7 +1480,7 @@
          <div class="col-12 col-md-4 mb-4">
             <a href="index.html" aria-label="SlotPlace Home">
          <!-- TODO: Convert to WebP - Current: PNG 97.5 KiB, Est savings: 74 KiB -->
-         <img src="./assets//slot-place-logo.webp" alt="slot place logo" style="width: 20%; transform: scale(2);" >
+         <img src="./assets/slot-place-logo.webp" alt="slot place logo" width="200" height="100" style="width: 20%; transform: scale(2);" loading="lazy">
             </a>
             <p class="text-white mt-3 small">Your trusted guide to the best online casinos. We review and recommend top-rated casino sites with exclusive bonuses, free spins, and safe gaming.</p>
             <p class="text-dark lead mb-1">Copyright © SlotPlace, 2026</p>
@@ -1515,10 +1520,14 @@
 
 
    
+   <!-- Preload Bootstrap JS for faster loading -->
+   <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" as="script">
+   
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous" defer></script>
 
    <script src="./main.js" defer></script>
 
+   <!-- Load third-party scripts after page load to reduce blocking time -->
    <script type="text/javascript" src="https://js.essential.partners/javascript.php?prefix=aJTkbc3ZJkPUOsjNOfgKeWNd7ZgqdRLk&amp;media=2&amp;campaign=1" async></script>
    
    <!-- Load animations CSS asynchronously for better performance -->
