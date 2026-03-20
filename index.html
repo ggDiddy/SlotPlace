@@ -67,6 +67,8 @@
    .casino-card{display:block!important;visibility:visible!important;content-visibility:auto;contain-intrinsic-size:auto 400px}
    section{display:block!important;visibility:visible!important;opacity:1!important;content-visibility:auto}
    .card{display:block!important;visibility:visible!important;opacity:1!important;content-visibility:auto;contain-intrinsic-size:auto 300px}
+   .fade-in-section{opacity:0;transform:translateY(30px);transition:opacity 0.6s ease-out,transform 0.6s ease-out}
+   .fade-in-section.is-visible{opacity:1;transform:translateY(0)}
    @media (max-width: 768px){
       .container{padding:0 15px!important;width:100%!important;max-width:100%!important}
       body{overflow-x:hidden}
@@ -91,9 +93,8 @@
    <link rel="preload" href="./styles.css" as="style">
    
    <!-- Preload critical images for LCP optimization -->
-   <link rel="preload" href="./assets/slot-place-logo.webp" as="image" type="image/webp" fetchpriority="high">
-   <link rel="preload" href="./assets/logo-vegasino.webp" as="image" type="image/webp">
-   <link rel="preload" href="./assets/BC-Game-Logo.webp" as="image" type="image/webp">
+   <link rel="preload" href="./assets/bg-slotplace-hero.webp" as="image" type="image/webp" fetchpriority="high">
+   <link rel="preload" href="./assets/slot-place-logo.webp" as="image" type="image/webp">
    
    <!-- Preload critical fonts -->
    <link rel="preload" href="https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2" as="font" type="font/woff2" crossorigin>
@@ -440,7 +441,7 @@
             
             <div class="card-body text-center p-4">
                 <a href="https://vgso.naralvin.com/?mid=241423_1671486" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/logo-vegasino.webp" class="mb-3" fetchpriority="high" alt="Vegasino casino" width="80" height="80" style="object-fit: contain;">
+                    <img src="./assets/logo-vegasino.webp" class="mb-3" alt="Vegasino casino" width="80" height="80" style="object-fit: contain;">
                 </a>
                 <h3 class="h5 fw-bold mb-2"><a href="https://vgso.naralvin.com/?mid=241423_1671486" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none">Vegasino</a></h3>
                 
@@ -496,7 +497,7 @@
             </div>
             
             <div class="card-body text-center p-4">
-                <img src="./assets/BC-Game-Logo.webp" class="mb-3" fetchpriority="high" alt="BCgame Casino" width="80" height="80" style="object-fit: contain;">
+                <img src="./assets/BC-Game-Logo.webp" class="mb-3" alt="BCgame Casino" width="80" height="80" style="object-fit: contain;">
                 
                 <h3 class="h5 fw-bold mb-2">BC.Game</h3>
                 
@@ -552,7 +553,7 @@
             </div>
             
             <div class="card-body text-center p-4">
-                <img src="./assets/Casina-logo.webp" class="mb-3" fetchpriority="high" alt="Casina Casino" width="80" height="80" style="object-fit: contain;">
+                <img src="./assets/Casina-logo.webp" class="mb-3" alt="Casina Casino" width="80" height="80" style="object-fit: contain;">
                 
                 <h3 class="h5 fw-bold mb-2">Casina</h3>
                 

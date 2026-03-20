@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
       window.addEventListener('resize', function() {
          clearTimeout(resizeTimer);
          resizeTimer = setTimeout(updateBannerPosition, 100);
-      });
+      }, { passive: true });
    }
    
    // Add fade-in class to sections
