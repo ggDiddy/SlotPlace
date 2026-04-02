@@ -12,7 +12,7 @@
   
   <!-- Reviews Page -->
   <url>
-    <loc>https://www.slot-place.com/reviews.html</loc>
+    <loc>https://www.slot-place.com/reviews</loc>
     <lastmod>2026-02-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -20,28 +20,28 @@
   
   <!-- Individual Casino Reviews -->
   <url>
-    <loc>https://www.slot-place.com/reviews-zinkra.html</loc>
+    <loc>https://www.slot-place.com/reviews-zinkra</loc>
     <lastmod>2026-02-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://www.slot-place.com/reviews-bcgame.html</loc>
+    <loc>https://www.slot-place.com/reviews-bcgame</loc>
     <lastmod>2026-02-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://www.slot-place.com/reviews-brango.html</loc>
+    <loc>https://www.slot-place.com/reviews-brango</loc>
     <lastmod>2026-02-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://www.slot-place.com/reviews-vegasino.html</loc>
+    <loc>https://www.slot-place.com/reviews-vegasino</loc>
     <lastmod>2026-03-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -49,7 +49,7 @@
   
   <!-- Free Spins Page -->
   <url>
-    <loc>https://www.slot-place.com/freespins.html</loc>
+    <loc>https://www.slot-place.com/freespins</loc>
     <lastmod>2026-02-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -57,7 +57,7 @@
   
   <!-- News Page -->
   <url>
-    <loc>https://www.slot-place.com/news.html</loc>
+    <loc>https://www.slot-place.com/news</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -65,7 +65,7 @@
   
   <!-- FAQ Page -->
   <url>
-    <loc>https://www.slot-place.com/faq.html</loc>
+    <loc>https://www.slot-place.com/faq</loc>
     <lastmod>2026-02-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -73,10 +73,34 @@
   
   <!-- About Us / Contact Page -->
   <url>
-    <loc>https://www.slot-place.com/aboutus.html</loc>
+    <loc>https://www.slot-place.com/aboutus</loc>
     <lastmod>2026-02-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  
+
+  <!-- Best Slots Canada Hub -->
+  <url>
+    <loc>https://www.slot-place.com/best-slots-canada</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Crypto Casinos Canada Hub -->
+  <url>
+    <loc>https://www.slot-place.com/crypto-casinos-canada</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Slot Palace vs Slot Place Comparison -->
+  <url>
+    <loc>https://www.slot-place.com/slot-palace-vs-slot-place</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
